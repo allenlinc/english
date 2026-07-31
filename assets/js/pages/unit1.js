@@ -251,6 +251,8 @@ function renderMustKnow(mk) {
   const grammarBtn = el('button', {
     className: 'btn btn-blue btn-sm',
     onClick: () => {
+      // 先切到 Part A 让句型区可见，再滚动过去
+      activatePart('A');
       document.getElementById('pa-sentences')?.scrollIntoView({ behavior: 'smooth' });
     }
   }, '去练句型');
@@ -265,6 +267,8 @@ function renderMustKnow(mk) {
     className: 'btn btn-sm',
     style: 'background:var(--c-purple);color:white',
     onClick: () => {
+      // 先切到 Part A 让语音区可见，再滚动过去
+      activatePart('A');
       document.getElementById('pa-phonics')?.scrollIntoView({ behavior: 'smooth' });
     }
   }, '去听发音');
