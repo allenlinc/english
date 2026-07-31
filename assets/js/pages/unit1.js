@@ -291,7 +291,6 @@ function openMiniTest(testQuestions) {
 
   const closeBtn = el('button', {
     className: 'modal-close',
-    style: 'position:static;margin-bottom:.5rem;float:right',
     onClick: () => { document.body.removeChild(overlay); TTS.stop(); }
   }, '✕');
 
