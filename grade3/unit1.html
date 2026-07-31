@@ -42,8 +42,36 @@
         <p class="unit-theme">单元主题：同伴交往与友好互助 🤝</p>
       </header>
 
+      <!-- Left sidebar navigation + content -->
+      <div class="unit-layout">
+
+        <!-- Sidebar nav -->
+        <aside class="unit-nav">
+          <div class="unit-nav__title">📚 本单元导航</div>
+          <nav>
+            <a class="unit-nav__link" href="#sec-objectives" data-target="sec-objectives" data-part="">🎯 学习目标</a>
+            <div class="unit-nav__group">💬 Part A · 打招呼</div>
+            <a class="unit-nav__link" href="#pa-dialogue" data-target="pa-dialogue" data-part="A">💬 对话</a>
+            <a class="unit-nav__link" href="#pa-vocab" data-target="pa-vocab" data-part="A">📝 词汇</a>
+            <a class="unit-nav__link" href="#pa-phonics" data-target="pa-phonics" data-part="A">🔤 语音</a>
+            <a class="unit-nav__link" href="#pa-sentences" data-target="pa-sentences" data-part="A">✨ 句型</a>
+            <div class="unit-nav__group">🤝 Part B · 成为好朋友</div>
+            <a class="unit-nav__link" href="#pb-dialogue" data-target="pb-dialogue" data-part="B">💬 对话</a>
+            <a class="unit-nav__link" href="#pb-vocab" data-target="pb-vocab" data-part="B">📝 词汇</a>
+            <a class="unit-nav__link" href="#pb-sentences" data-target="pb-sentences" data-part="B">✨ 句型</a>
+            <a class="unit-nav__link" href="#pb-startread" data-target="pb-startread" data-part="B">📖 Start to read</a>
+            <a class="unit-nav__link" href="#pb-reading" data-target="pb-reading" data-part="B">📚 Reading time</a>
+            <a class="unit-nav__link" href="#pb-flashcards" data-target="pb-flashcards" data-part="B">🃏 闪卡</a>
+            <div class="unit-nav__group">🎨 Part C · 实践任务</div>
+            <a class="unit-nav__link" href="#pc-project" data-target="pc-project" data-part="C">🎨 Project</a>
+          </nav>
+          <button class="btn btn-accent btn-sm unit-nav__test" id="nav-mini-test" style="margin-top:1rem;width:100%">📝 必考点小测</button>
+        </aside>
+
+        <div class="unit-content">
+
       <!-- Learning Objectives -->
-      <section class="section--tight">
+      <section class="section--tight" id="sec-objectives">
         <div class="objectives">
           <h3 style="margin-bottom:.5rem">🎯 学习目标</h3>
           <ol id="objectives-list"></ol>
@@ -126,11 +154,8 @@
         </section>
       </div>
 
-      <!-- ====== MUST-KNOW ====== -->
-      <section class="section--tight" id="must-know">
-        <h2 style="text-align:center;margin-bottom:1rem">⭐ 本单元必考点</h2>
-        <div class="must-know-grid" id="mk-grid"></div>
-      </section>
+      </div><!-- /unit-content -->
+      </div><!-- /unit-layout -->
     </div>
   </main>
 

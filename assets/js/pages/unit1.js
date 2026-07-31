@@ -39,8 +39,8 @@ export async function initUnit1() {
   renderPartB(data.parts.B);
   renderPartC(data.parts.C);
 
-  // Render must-know section
-  renderMustKnow(data.mustKnow);
+  // Init left sidebar navigation
+  initSidebar(data.mustKnow.test);
 
   // TTS init on first user click
   document.addEventListener('click', () => TTS.init(), { once: true });
@@ -224,67 +224,41 @@ function renderPartC(part) {
   container.appendChild(card);
 }
 
-// --- Must-Know Section ---
-function renderMustKnow(mk) {
-  const grid = document.getElementById('mk-grid');
-  grid.innerHTML = '';
+// --- Sidebar Navigation ---
+function initSidebar(testQuestions) {
+  const links = document.querySelectorAll('.unit-nav a[data-target]');
+  const byId = new Map();
+  links.forEach(a => byId.set(a.dataset.target, a));
 
-  // Vocab card
-  const vocabCard = el('div', { className: 'mk-card mk-card--vocab' });
-  vocabCard.appendChild(el('h3', {}, `📌 必考词汇（${mk.vocabCount} 个）`));
-  vocabCard.appendChild(el('p', {}, mk.vocab.join(' / ')));
-  const vocabBtn = el('button', {
-    className: 'btn btn-green btn-sm',
-    onClick: () => {
-      // 先切到 Part B 让闪卡区域可见，再滚动过去
-      activatePart('B');
-      document.getElementById('pb-flashcards')?.scrollIntoView({ behavior: 'smooth' });
+  // Click: switch part tab first (if any), then smooth-scroll to target
+  links.forEach(a => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const part = a.dataset.part;
+      if (part) activatePart(part);
+      document.getElementById(a.dataset.target)?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Mini test button in sidebar
+  document.getElementById('nav-mini-test')?.addEventListener('click', () => openMiniTest(testQuestions));
+
+  // Scrollspy: highlight the section currently in view
+  const ids = [...byId.keys()];
+  function onScroll() {
+    let current = null;
+    for (const id of ids) {
+      const elm = document.getElementById(id);
+      if (!elm) continue;
+      const rect = elm.getBoundingClientRect();
+      if (rect.height === 0) continue; // panel hidden
+      if (rect.top <= 140) current = id;
     }
-  }, '去看闪卡');
-  vocabCard.appendChild(vocabBtn);
-  grid.appendChild(vocabCard);
-
-  // Grammar card
-  const grammarCard = el('div', { className: 'mk-card mk-card--grammar' });
-  grammarCard.appendChild(el('h3', {}, `📝 必考句型（${mk.sentenceCount} 句）`));
-  grammarCard.appendChild(el('p', {}, mk.sentences.join(' / ')));
-  const grammarBtn = el('button', {
-    className: 'btn btn-blue btn-sm',
-    onClick: () => {
-      // 先切到 Part A 让句型区可见，再滚动过去
-      activatePart('A');
-      document.getElementById('pa-sentences')?.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, '去练句型');
-  grammarCard.appendChild(grammarBtn);
-  grid.appendChild(grammarCard);
-
-  // Phonics card
-  const phonicsCard = el('div', { className: 'mk-card mk-card--phonics' });
-  phonicsCard.appendChild(el('h3', {}, `🔤 必考语音（${mk.phonicsCount} 个）`));
-  phonicsCard.appendChild(el('p', {}, mk.phonics.join('  ')));
-  const phonicsBtn = el('button', {
-    className: 'btn btn-sm',
-    style: 'background:var(--c-purple);color:white',
-    onClick: () => {
-      // 先切到 Part A 让语音区可见，再滚动过去
-      activatePart('A');
-      document.getElementById('pa-phonics')?.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, '去听发音');
-  phonicsCard.appendChild(phonicsBtn);
-  grid.appendChild(phonicsCard);
-
-  // Mini test card
-  const testCard = el('div', { className: 'mk-card mk-card--test' });
-  testCard.appendChild(el('h3', {}, `📝 必考点小测（${mk.test.length} 题）`));
-  testCard.appendChild(el('p', {}, '3 分钟检测学习效果'));
-  const testBtn = el('button', {
-    className: 'btn btn-accent btn-sm',
-    onClick: () => openMiniTest(mk.test)
-  }, '开始小测');
-  testCard.appendChild(testBtn);
-  grid.appendChild(testCard);
+    links.forEach(a => a.classList.toggle('active', a.dataset.target === current));
+  }
+  document.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
 }
 
 function openMiniTest(testQuestions) {
