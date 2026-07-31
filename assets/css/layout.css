@@ -58,7 +58,21 @@
   display: flex; gap: .5rem; justify-content: center;
   margin-top: .9rem;
 }
-.sem-row .btn { flex: 1; }
+.sem-btn {
+  flex: 1; display: inline-flex; align-items: center; justify-content: center;
+  padding: .65rem .5rem; border-radius: var(--radius-md);
+  font-size: 1rem; font-weight: 800; cursor: pointer; text-decoration: none;
+  border: 2px solid transparent; box-shadow: var(--shadow-sm);
+  transition: all var(--fast) var(--ease);
+}
+.sem-btn--go {
+  background: var(--c-green); color: #fff; border-color: var(--c-green);
+}
+.sem-btn--go:hover { background: #5DA838; transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.sem-btn--off {
+  background: var(--c-gray3); color: var(--c-gray); border-color: var(--c-gray2);
+  cursor: not-allowed;
+}
 
 /* Section Spacing */
 .section { padding: 2rem 0; }
