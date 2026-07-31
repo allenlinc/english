@@ -103,8 +103,8 @@
 
     function semButtons(g) {
       return (g.semesters || []).map(s => s.active
-        ? `<a href="${s.url}" class="sem-btn sem-btn--active" title="${s.desc}">📖 ${s.label}</a>`
-        : `<button class="sem-btn" disabled title="${s.desc}">${s.label}</button>`
+        ? `<a href="${s.url}" class="btn btn-primary">📖 ${s.label}</a>`
+        : `<button class="btn btn-outline" disabled>${s.label}</button>`
       ).join('');
     }
 

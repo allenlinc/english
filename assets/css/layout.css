@@ -58,16 +58,7 @@
   display: flex; gap: .5rem; justify-content: center;
   margin-top: .9rem;
 }
-.sem-btn {
-  flex: 1; padding: .45rem .25rem; border-radius: var(--radius-sm);
-  font-size: .92rem; font-weight: 700; cursor: pointer;
-  border: 2px solid var(--c-gray2); background: var(--c-gray3);
-  color: var(--c-gray); text-decoration: none;
-  transition: all var(--fast) var(--ease);
-}
-.sem-btn--active { background: var(--c-green); color: #fff; border-color: var(--c-green); }
-.sem-btn--active:hover { filter: brightness(1.05); transform: translateY(-2px); }
-.sem-btn:disabled { opacity: .5; cursor: not-allowed; }
+.sem-row .btn { flex: 1; }
 
 /* Section Spacing */
 .section { padding: 2rem 0; }
