@@ -53,17 +53,23 @@
 
 /* Matcher */
 .matcher {
-  display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;
+  display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
+  align-items: flex-start;
 }
 .matcher__col {
   display: flex; flex-direction: column; gap: .5rem;
+  flex: 0 1 160px;         /* 左右两列等宽 */
+  min-width: 120px;
 }
 .matcher-item {
-  padding: .5rem 1rem; border-radius: var(--radius-sm);
+  width: 100%;              /* 撑满列宽，同列内所有按钮等宽对齐 */
+  display: flex; align-items: center; justify-content: center;
+  gap: .35rem; box-sizing: border-box;
+  padding: .5rem .75rem; border-radius: var(--radius-sm);
   background: var(--c-surface); box-shadow: var(--shadow-sm);
-  cursor: pointer; font-size: .95rem; text-align: center;
+  cursor: pointer; font-size: .95rem;
   border: 2px solid transparent; transition: all var(--fast) var(--ease);
-  min-width: 100px;
+  min-height: 42px;         /* 每行等高 */
 }
 .matcher-item:hover { background: var(--c-cream2); }
 .matcher-item.selected { border-color: var(--c-blue); background: #E3F0FF; }
