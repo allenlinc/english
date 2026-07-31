@@ -61,6 +61,10 @@ function setupTabs() {
   activatePart = (part) => {
     tabs.forEach(t => t.classList.toggle('active', t.dataset.part === part));
     panels.forEach(p => p.classList.toggle('active', p.dataset.part === part));
+    // 同步左侧导航的 Part 项高亮
+    document.querySelectorAll('.unit-nav__part').forEach(a =>
+      a.classList.toggle('active', a.dataset.part === part)
+    );
   };
 
   tabs.forEach(tab => {
@@ -227,8 +231,6 @@ function renderPartC(part) {
 // --- Sidebar Navigation ---
 function initSidebar(testQuestions) {
   const links = document.querySelectorAll('.unit-nav a[data-target]');
-  const byId = new Map();
-  links.forEach(a => byId.set(a.dataset.target, a));
 
   // Click: switch part tab first (if any), then smooth-scroll to target
   links.forEach(a => {
@@ -242,23 +244,6 @@ function initSidebar(testQuestions) {
 
   // Mini test button in sidebar
   document.getElementById('nav-mini-test')?.addEventListener('click', () => openMiniTest(testQuestions));
-
-  // Scrollspy: highlight the section currently in view
-  const ids = [...byId.keys()];
-  function onScroll() {
-    let current = null;
-    for (const id of ids) {
-      const elm = document.getElementById(id);
-      if (!elm) continue;
-      const rect = elm.getBoundingClientRect();
-      if (rect.height === 0) continue; // panel hidden
-      if (rect.top <= 140) current = id;
-    }
-    links.forEach(a => a.classList.toggle('active', a.dataset.target === current));
-  }
-  document.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', onScroll);
-  onScroll();
 }
 
 function openMiniTest(testQuestions) {

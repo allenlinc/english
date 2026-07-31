@@ -104,14 +104,10 @@
 .unit-nav__title {
   font-weight: 800; font-size: .95rem; margin-bottom: .75rem;
 }
-.unit-nav__group {
-  font-size: .72rem; color: var(--c-gray); font-weight: 700;
-  margin: .9rem 0 .35rem; letter-spacing: .03em;
-}
 .unit-nav__link {
   display: flex; align-items: center; gap: .4rem;
-  padding: .4rem .6rem; border-radius: var(--radius-sm);
-  font-size: .88rem; color: var(--c-ink); text-decoration: none;
+  padding: .5rem .6rem; border-radius: var(--radius-sm);
+  font-size: .9rem; color: var(--c-ink); text-decoration: none;
   transition: all var(--fast) var(--ease);
 }
 .unit-nav__link:hover { background: var(--c-cream2); }
@@ -119,21 +115,12 @@
 .unit-nav__test { flex-shrink: 0; }
 
 /* Smooth anchor offset under fixed navbar */
-#sec-objectives,
-[data-part="A"] [id^="pa-"], [data-part="B"] [id^="pb-"],
-#pc-project { scroll-margin-top: 90px; }
+.part-panel, #sec-objectives { scroll-margin-top: 90px; }
 
-/* Mobile: sidebar becomes a horizontal scrollable bar */
-@media (max-width: 900px) {
-  .unit-layout { display: block; }
-  .unit-nav {
-    display: flex; flex-wrap: nowrap; overflow-x: auto;
-    position: static; max-height: none;
-    margin-bottom: 1rem; gap: .35rem;
-  }
-  .unit-nav__title, .unit-nav__group { display: none; }
-  .unit-nav__link { white-space: nowrap; flex-shrink: 0; }
-  .unit-nav__test { margin: 0 !important; width: auto !important; }
+/* Narrow screens: keep sidebar on the left, just slim it down */
+@media (max-width: 700px) {
+  .unit-nav { flex: 0 0 130px; padding: .75rem; }
+  .unit-nav__link { font-size: .8rem; padding: .4rem .45rem; gap: .25rem; }
 }
 
 /* Reading section */
