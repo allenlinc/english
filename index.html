@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小学英语同步学习 — 跟着教材帮一起学</title>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 36 36"><use href="assets/img/mascot-star.svg#star"/></svg>
+        英语同步学
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">首页</a>
+        <a href="#grades">分年级</a>
+        <a href="grade3.html">三年级</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="page-wrap">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-mascot">⭐</div>
+        <h1>小学英语同步学习</h1>
+        <p>跟着教材帮一起学 · 同步课本 · 趣味练习 · 进度可见</p>
+        <div class="hero-actions">
+          <a href="grade3.html" class="btn btn-primary btn-lg">✨ 开始学习</a>
+          <a href="books/25秋三上教材帮英语人教.pdf" class="btn btn-outline btn-lg" target="_blank">📖 查看教材</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Recommend -->
+    <section class="section">
+      <div class="container">
+        <div class="daily-card" id="daily-recommend">
+          <div class="daily-card__info">
+            <h3>📌 今日推荐</h3>
+            <p id="daily-text">正在加载…</p>
+          </div>
+          <a href="grade3/unit1.html" class="btn btn-accent">去学习 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="highlight-grid">
+          <div class="card" style="text-align:center">
+            <div style="font-size:2.5rem">🔊</div>
+            <h3>真人发音</h3>
+            <p style="color:var(--c-gray);font-size:.9rem">点击单词 / 句子就能听到发音，像老师在身边</p>
+          </div>
+          <div class="card" style="text-align:center">
+            <div style="font-size:2.5rem">📝</div>
+            <h3>必考点练习</h3>
+            <p style="color:var(--c-gray);font-size:.9rem">每单元提取必考词汇、句型和语法，精练精讲</p>
+          </div>
+          <div class="card" style="text-align:center">
+            <div style="font-size:2.5rem">🎮</div>
+            <h3>互动小测</h3>
+            <p style="color:var(--c-gray);font-size:.9rem">听音选词、拼句型、连连看，边玩边学</p>
+          </div>
+          <div class="card" style="text-align:center">
+            <div style="font-size:2.5rem">📊</div>
+            <h3>进度可见</h3>
+            <p style="color:var(--c-gray);font-size:.9rem">自动记录学习进度，今天学到哪，下次接着来</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grade Navigation -->
+    <section class="section" id="grades">
+      <div class="container">
+        <h2 style="text-align:center;margin-bottom:1.5rem">📚 分年级学习</h2>
+        <div class="grade-grid" id="grade-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module">
+    import { Progress } from './assets/js/core/progress.js';
+
+    // Render grade cards
+    const res = await fetch('data/grades.json');
+    const { grades } = await res.json();
+    const grid = document.getElementById('grade-grid');
+
+    const totalSectionsMap = { u1: 11, u2: 11, u3: 11, u4: 11, u5: 11, u6: 11, rev: 6 };
+    const unitIds = ['u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'rev'];
+    const gp = Progress.getGradeProgress(3, unitIds, totalSectionsMap);
+
+    for (const g of grades) {
+      const card = document.createElement('div');
+      const active = g.active;
+
+      if (active) {
+        // Calculate overall G3 progress
+        const total = gp.reduce((s, u) => s + (totalSectionsMap[u.unitId] || 10), 0);
+        const done = gp.reduce((s, u) => s + u.completed.length, 0);
+        const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
+        card.className = 'grade-card card--active';
+        card.innerHTML = `
+          <div class="grade-card__icon">${g.icon}</div>
+          <div class="grade-card__title">${g.label}</div>
+          <div class="grade-card__sub">${g.desc}</div>
+          <div class="progress-bar" style="margin-top:.75rem">
+            <div class="progress-bar__fill" style="width:${pct}%"></div>
+          </div>
+          <div style="font-size:.8rem;color:var(--c-gray);margin-top:.35rem">整体进度 ${pct}%</div>
+          <a href="${g.url}" class="btn btn-primary" style="margin-top:.75rem">进入学习</a>
+        `;
+      } else {
+        card.className = 'grade-card grade-card--coming';
+        card.innerHTML = `
+          <div class="grade-card__icon">${g.icon}</div>
+          <div class="grade-card__title">${g.label}</div>
+          <div class="grade-card__sub">${g.desc}</div>
+          <button class="btn btn-outline" style="margin-top:.75rem" disabled>敬请期待</button>
+        `;
+      }
+      grid.appendChild(card);
+    }
+
+    // Daily recommend
+    const recUnit = Progress.getRecommendedUnit(3, unitIds, totalSectionsMap);
+    const metaRes = await fetch('data/grade3/meta.json');
+    const meta = await metaRes.json();
+    const unit = meta.units.find(u => u.id === recUnit) || meta.units[0];
+    document.getElementById('daily-text').textContent =
+      `三年级 Unit ${unit.number}：${unit.titleEn} ${unit.titleZh}`;
+  </script>
+</body>
+</html>

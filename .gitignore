@@ -1,0 +1,10 @@
+# 大体积教材 PDF（网站不内嵌，仅页脚下载链接），不进 git
+books/
+
+# WorkBuddy 项目私有记忆/计划
+.workbuddy/
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,244 @@
+{
+  "id": "g3u1",
+  "number": 1,
+  "titleEn": "Making friends",
+  "titleZh": "交朋友",
+  "theme": "同伴交往与友好互助",
+  "totalSections": 11,
+  "objectives": [
+    { "text": "能够向他人礼貌问好并做自我介绍，用表情和肢体动作来表达友好。", "icon": "🎯" },
+    { "text": "能够说出身体部位的名称和朋友之间友好相处的方式。", "icon": "🗣️" },
+    { "text": "能够读出字母 Aa—Dd 的名称音，辨别它们在单词中的发音，识别大小写形式并在四线格上正确书写。", "icon": "🔤" },
+    { "text": "能够借助图片和标题的提示，理解海报的主题，获取关键信息。", "icon": "📖" }
+  ],
+  "parts": {
+    "A": {
+      "id": "A",
+      "label": "Part A · 如何打招呼",
+      "intro": "How do we greet friends? 我们如何和朋友打招呼?",
+      "dialogue": {
+        "lines": [
+          { "speaker": "Mike Black", "en": "Hello! I'm Mike Black.", "zh": "你好！我是迈克·布莱克。" },
+          { "speaker": "Wu Binbin", "en": "Hi! My name is Wu Binbin.", "zh": "你好！我叫吴彬彬。" },
+          { "speaker": "Mike Black", "en": "Nice to meet you.", "zh": "见到你很高兴。" },
+          { "speaker": "Wu Binbin", "en": "Nice to meet you too.", "zh": "见到你（我）也很高兴。" }
+        ]
+      },
+      "vocab": [
+        { "word": "name", "zh": "名字", "icon": "🪪", "example": "This is my name.", "exampleZh": "这是我的名字。" },
+        { "word": "ear", "zh": "耳朵", "icon": "👂", "example": "I have two ears.", "exampleZh": "我有两只耳朵。" },
+        { "word": "mouth", "zh": "嘴", "icon": "👄", "example": "Open your mouth.", "exampleZh": "张开你的嘴。" },
+        { "word": "nice", "zh": "令人愉快的；友好的", "icon": "😊", "example": "She is very nice.", "exampleZh": "她非常友好。" },
+        { "word": "hand", "zh": "手", "icon": "✋", "example": "Wave your hand.", "exampleZh": "挥动你的手。" },
+        { "word": "arm", "zh": "胳膊", "icon": "💪", "example": "Lift your arms.", "exampleZh": "举起你的胳膊。" },
+        { "word": "eye", "zh": "眼睛", "icon": "👁️", "example": "Close your eyes.", "exampleZh": "闭上你的眼睛。" }
+      ],
+      "phonics": [
+        { "letter": "Aa", "sound": "/eɪ/", "example": "name", "exampleZh": "名字", "memory": "Aa 像尖顶，/eɪ/ 像鹅叫的声音" },
+        { "letter": "Bb", "sound": "/biː/", "example": "boy", "exampleZh": "男孩", "memory": "Bb 像竖琴，/biː/ 像蜜蜂嗡嗡的声音" },
+        { "letter": "Cc", "sound": "/siː/", "example": "cat", "exampleZh": "猫", "memory": "Cc 像弯月，/siː/ 像轻轻吹风的声音" },
+        { "letter": "Dd", "sound": "/diː/", "example": "dog", "exampleZh": "狗", "memory": "Dd 像一扇门，/diː/ 像轻轻敲门的声音" }
+      ],
+      "coreSentences": [
+        { "en": "Hello! I'm Mike Black.", "zh": "你好！我是迈克·布莱克。", "blocks": ["Hello", "!", "I'm", "Mike Black", "."] },
+        { "en": "Hi! My name is Wu Binbin.", "zh": "你好！我叫吴彬彬。", "blocks": ["Hi", "!", "My", "name", "is", "Wu Binbin", "."] },
+        { "en": "Nice to meet you.", "zh": "见到你很高兴。", "blocks": ["Nice", "to", "meet", "you", "."] },
+        { "en": "Nice to meet you too.", "zh": "见到你（我）也很高兴。", "blocks": ["Nice", "to", "meet", "you", "too", "."] }
+      ]
+    },
+    "B": {
+      "id": "B",
+      "label": "Part B · 如何成为好朋友",
+      "intro": "How can we be a good friend? 我们如何能够成为一个好朋友?",
+      "dialogue": {
+        "lines": [
+          { "speaker": "Zoom", "en": "OK. We can share.", "zh": "好的。我们可以分享。" },
+          { "speaker": "Zip", "en": "Thanks!", "zh": "谢谢！" },
+          { "speaker": "Zoom", "en": "I smile. I help. I listen with care.", "zh": "我微笑。我帮助。我用心倾听。" },
+          { "speaker": "Zip", "en": "Thank you.", "zh": "谢谢你。" }
+        ]
+      },
+      "vocab": [
+        { "word": "can", "zh": "可以；能够", "icon": "✅", "example": "I can run.", "exampleZh": "我能跑。" },
+        { "word": "share", "zh": "分享", "icon": "🤝", "example": "We share toys.", "exampleZh": "我们分享玩具。" },
+        { "word": "smile", "zh": "微笑", "icon": "🙂", "example": "Smile, please.", "exampleZh": "请微笑。" },
+        { "word": "help", "zh": "帮助", "icon": "🆘", "example": "Help me, please.", "exampleZh": "请帮帮我。" },
+        { "word": "listen", "zh": "听；倾听", "icon": "👂", "example": "Listen with care.", "exampleZh": "用心倾听。" },
+        { "word": "say", "zh": "说；讲", "icon": "💬", "example": "Say hello.", "exampleZh": "说你好。" },
+        { "word": "and", "zh": "和；与", "icon": "+", "example": "You and me.", "exampleZh": "你和我。" },
+        { "word": "good", "zh": "好的", "icon": "👍", "example": "Good job!", "exampleZh": "做得好！" },
+        { "word": "goodbye", "zh": "再见", "icon": "👋", "example": "Goodbye, friend.", "exampleZh": "再见，朋友。" },
+        { "word": "friend", "zh": "朋友", "icon": "🧑‍🤝‍🧑", "example": "You are my friend.", "exampleZh": "你是我的朋友。" },
+        { "word": "toy", "zh": "玩具", "icon": "🧸", "example": "This is my toy.", "exampleZh": "这是我的玩具。" }
+      ],
+      "coreSentences": [
+        { "en": "We can share.", "zh": "我们可以分享。", "blocks": ["We", "can", "share", "."] },
+        { "en": "Thanks!", "zh": "谢谢！", "blocks": ["Thanks", "!"] },
+        { "en": "Thank you.", "zh": "谢谢你。", "blocks": ["Thank", "you", "."] },
+        { "en": "I smile.", "zh": "我微笑。", "blocks": ["I", "smile", "."] },
+        { "en": "I help.", "zh": "我帮助。", "blocks": ["I", "help", "."] },
+        { "en": "I listen with care.", "zh": "我用心倾听。", "blocks": ["I", "listen", "with care", "."] }
+      ],
+      "startToRead": {
+        "title": "How to be a good friend",
+        "titleZh": "如何做一个好朋友",
+        "passage": [
+          "A good friend says, \"Hello!\"",
+          "A good friend shares toys.",
+          "A good friend smiles.",
+          "A good friend helps.",
+          "A good friend listens with care."
+        ]
+      },
+      "readingTime": {
+        "title": "My new friend Zoom",
+        "titleZh": "我的新朋友 Zoom",
+        "paragraphs": [
+          "Hi! I'm Zoom. I have a new friend. His name is Zip.",
+          "We can share. We can smile. We can help.",
+          "I listen with care. I say, \"Thank you.\"",
+          "I have a good friend. He is nice."
+        ]
+      }
+    },
+    "C": {
+      "id": "C",
+      "label": "Part C · 单元实践任务",
+      "intro": "Make a mind map of making friends 制作一个交友的思维导图",
+      "project": {
+        "title": "制作一个交友的思维导图",
+        "titleEn": "Make a mind map of making friends",
+        "steps": [
+          { "icon": "✏️", "label": "拿出一张纸，在中间画一个小朋友或写上 \"My Friends\"。" },
+          { "icon": "🤝", "label": "从中间向外画出线条，写出你交朋友时会做的事情（如：share、smile、help）。" },
+          { "icon": "🖍️", "label": "用不同颜色装饰你的思维导图，让它好看又清楚。" },
+          { "icon": "🗣️", "label": "和家人说一说你画的思维导图，告诉他们你哪个做得最好。" }
+        ],
+        "meaning": "能列举朋友友好相处的行为表现，并反思自己是不是一个好朋友。",
+        "extension": "和家人一起画一画你的 mind map，找一找自己哪些做得好、哪些可以做得更好。"
+      }
+    }
+  },
+  "mustKnow": {
+    "vocab": ["name", "ear", "mouth", "nice", "hand", "arm", "eye", "can", "share", "smile", "help", "friend"],
+    "vocabCount": 12,
+    "sentences": ["Hello! I'm …", "Hi! My name is …", "Nice to meet you.", "We can share.", "Thanks!", "I smile."],
+    "sentenceCount": 6,
+    "phonics": ["Aa /eɪ/", "Bb /biː/", "Cc /siː/", "Dd /diː/"],
+    "phonicsCount": 4,
+    "test": [
+      {
+        "id": "g3u1-mk-q1",
+        "type": "listen-pick",
+        "prompt": "听单词，选出对应的中文意思。",
+        "audio": "name",
+        "options": ["手", "名字", "耳朵", "眼睛"],
+        "answer": 1
+      },
+      {
+        "id": "g3u1-mk-q2",
+        "type": "multiple-choice",
+        "prompt": "\"我叫迈克\" 对应的英文是？",
+        "options": [
+          "Hi! You are Mike.",
+          "Hello! My name are Mike.",
+          "Hello! I'm Mike Black.",
+          "Hi! I Mike."
+        ],
+        "answer": 2
+      },
+      {
+        "id": "g3u1-mk-q3",
+        "type": "multiple-choice",
+        "prompt": "\"Nice to meet you.\" 的正确回应是？",
+        "options": [
+          "Hello!",
+          "I am Mike.",
+          "My name is Wu Binbin.",
+          "Nice to meet you too."
+        ],
+        "answer": 3
+      },
+      {
+        "id": "g3u1-mk-q4",
+        "type": "multiple-choice",
+        "prompt": "字母 Bb 的发音是？",
+        "options": [
+          "/eɪ/",
+          "/biː/",
+          "/siː/",
+          "/diː/"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "g3u1-mk-q5",
+        "type": "matcher",
+        "prompt": "把单词和对应的意思连起来：",
+        "pairs": [
+          { "word": "ear", "icon": "👂", "zh": "耳朵" },
+          { "word": "eye", "icon": "👁️", "zh": "眼睛" },
+          { "word": "mouth", "icon": "👄", "zh": "嘴" },
+          { "word": "hand", "icon": "✋", "zh": "手" }
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "id": "g3u1-rv-q1",
+      "type": "listen-pick",
+      "prompt": "听单词，选出对应的中文意思。",
+      "audio": "mouth",
+      "options": ["耳朵", "眼睛", "嘴", "手"],
+      "answer": 2
+    },
+    {
+      "id": "g3u1-rv-q2",
+      "type": "multiple-choice",
+      "prompt": "选出句子中正确的单词：\"___ your hand.\"",
+      "options": [
+        "Wave",
+        "Waves",
+        "Waving",
+        "Waved"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "g3u1-rv-q3",
+      "type": "multiple-choice",
+      "prompt": "\"We can share.\" 的中文意思是？",
+      "options": [
+        "我们会唱歌。",
+        "我们可以分享。",
+        "我们可以跑步。",
+        "我们会微笑。"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "g3u1-rv-q4",
+      "type": "multiple-choice",
+      "prompt": "选出正确的句子：",
+      "options": [
+        "I have a good friend.",
+        "I have a good friends.",
+        "I am have a good friend.",
+        "I has a good friend."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "g3u1-rv-q5",
+      "type": "matcher",
+      "prompt": "把英文单词和中文连起来：",
+      "pairs": [
+        { "word": "smile", "icon": "😊", "zh": "微笑" },
+        { "word": "help", "icon": "🤝", "zh": "帮助" },
+        { "word": "share", "icon": "🎁", "zh": "分享" },
+        { "word": "friend", "icon": "👫", "zh": "朋友" }
+      ]
+    }
+  ]
+}

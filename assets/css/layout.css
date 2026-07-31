@@ -1,0 +1,146 @@
+/* === Layout & Responsive === */
+
+/* Grid utilities */
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+
+@media (max-width: 768px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
+
+/* Home Hero */
+.hero {
+  text-align: center; padding: 3rem 1rem 2rem;
+  background: linear-gradient(180deg, var(--c-cream2) 0%, var(--c-cream) 100%);
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-bottom: .5rem;
+}
+.hero p {
+  font-size: 1.1rem; color: var(--c-gray); margin-bottom: 1.5rem;
+}
+.hero-actions { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
+.hero-mascot { font-size: 5rem; margin-bottom: .5rem; animation: float 3s ease-in-out infinite; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Grade Cards (Homepage) */
+.grade-grid {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem 0;
+}
+@media (max-width: 600px) { .grade-grid { grid-template-columns: 1fr; } }
+
+.grade-card {
+  background: var(--c-surface); border-radius: var(--radius-lg);
+  padding: 2rem; text-align: center; box-shadow: var(--shadow-md);
+  transition: all var(--fast) var(--ease);
+}
+.grade-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); }
+.grade-card__icon { font-size: 3rem; margin-bottom: .5rem; }
+.grade-card__title { font-family: var(--font-en); font-size: 1.6rem; font-weight: 800; }
+.grade-card__sub { color: var(--c-gray); font-size: .9rem; }
+.grade-card--coming { background: var(--c-gray3); }
+.grade-card--coming .grade-card__title { color: var(--c-gray); }
+
+/* Section Spacing */
+.section { padding: 2rem 0; }
+.section--tight { padding: 1rem 0; }
+
+/* Part tabs content layout */
+.part-panel { display: none; padding: 1.5rem 0; }
+.part-panel.active { display: block; }
+
+/* Desktop 3-column for parts (future) */
+@media (min-width: 900px) {
+  .parts-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+  }
+  .parts-grid .part-panel { display: block; }
+}
+
+/* Feature highlight section */
+.highlight-grid {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 2rem 0;
+}
+
+/* Daily recommend */
+.daily-card {
+  background: linear-gradient(135deg, var(--c-yellow), #FFE055);
+  border-radius: var(--radius-lg); padding: 1.5rem 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0;
+  box-shadow: var(--shadow-md);
+}
+.daily-card__info h3 { font-size: 1.1rem; color: var(--c-ink); margin-bottom: .25rem; }
+.daily-card__info p { color: var(--c-ink); opacity: .7; }
+
+/* Must-know grid */
+.must-know-grid {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1.5rem 0;
+}
+@media (max-width: 600px) { .must-know-grid { grid-template-columns: 1fr; } }
+
+.mk-card {
+  background: var(--c-surface); border-radius: var(--radius-md);
+  padding: 1.5rem; box-shadow: var(--shadow-md);
+  border-left: 5px solid var(--c-red);
+}
+.mk-card h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+.mk-card p { font-size: .9rem; color: var(--c-gray); margin-bottom: .75rem; }
+.mk-card--vocab { border-left-color: var(--c-green); }
+.mk-card--grammar { border-left-color: var(--c-blue); }
+.mk-card--phonics { border-left-color: var(--c-purple); }
+.mk-card--test { border-left-color: var(--c-red); }
+
+/* Reading section */
+.reading-passage {
+  background: var(--c-surface); border-radius: var(--radius-md);
+  padding: 1.5rem; box-shadow: var(--shadow-sm);
+  font-family: var(--font-en); font-size: 1.1rem; line-height: 1.8;
+  margin: .75rem 0;
+}
+.reading-passage p { margin-bottom: .75rem; }
+
+/* Project card */
+.project-card {
+  background: var(--c-surface); border-radius: var(--radius-md);
+  padding: 1.5rem; box-shadow: var(--shadow-md);
+  margin: 1rem 0;
+}
+.project-steps {
+  display: grid; gap: .75rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-top: .75rem;
+}
+.project-step {
+  background: var(--c-cream2); border-radius: var(--radius-sm);
+  padding: 1rem; text-align: center;
+}
+.project-step__icon { font-size: 2rem; margin-bottom: .35rem; }
+.project-step__label { font-size: .85rem; font-weight: 700; }
+
+/* Completion check */
+.complete-check {
+  display: flex; align-items: center; gap: .75rem; padding: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .hero { padding: 2rem 1rem 1.5rem; }
+  .grade-card { padding: 1.25rem; }
+}

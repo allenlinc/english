@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 1 Making Friends — 三年级英语同步学</title>
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/unit.css">
+  <link rel="stylesheet" href="../assets/css/quiz.css">
+</head>
+<body data-unit-theme="u1">
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <svg width="36" height="36"><use href="../assets/img/mascot-star.svg#star"/></svg>
+        英语同步学
+      </a>
+      <div class="nav-links">
+        <a href="../index.html">首页</a>
+        <a href="../grade3.html">三年级</a>
+        <a href="unit1.html" class="active">Unit 1</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-wrap unit-page" data-unit="g3u1">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="../index.html">首页</a> <span>›</span>
+        <a href="../grade3.html">三年级</a> <span>›</span>
+        <span>Unit 1 · 交朋友</span>
+      </div>
+
+      <!-- Unit Header -->
+      <header class="unit-header">
+        <span class="badge badge--unit" style="background:var(--c-green)">Unit 1</span>
+        <h1>Making friends <small>交朋友</small></h1>
+        <p class="unit-theme">单元主题：同伴交往与友好互助 🤝</p>
+      </header>
+
+      <!-- Learning Objectives -->
+      <section class="section--tight">
+        <div class="objectives">
+          <h3 style="margin-bottom:.5rem">🎯 学习目标</h3>
+          <ol id="objectives-list"></ol>
+        </div>
+      </section>
+
+      <!-- Part Tabs (mobile) / Section Headers -->
+      <section class="section--tight">
+        <div class="tabs" role="tablist">
+          <button class="tab-btn" data-part="A" role="tab" data-part="A">Part A · 打招呼</button>
+          <button class="tab-btn" data-part="B" role="tab" data-part="B">Part B · 成为好朋友</button>
+          <button class="tab-btn" data-part="C" role="tab" data-part="C">Part C · 实践任务</button>
+        </div>
+      </section>
+
+      <!-- ====== PART A ====== -->
+      <div class="part-panel" data-part="A" id="part-A">
+        <section class="content-section">
+          <div class="content-section__title">💬 Let's talk · 对话</div>
+          <p style="color:var(--c-gray);font-size:.9rem;margin-bottom:.5rem">How do we greet friends? 我们如何和朋友打招呼?</p>
+          <div id="pa-dialogue"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-section__title">📝 Let's learn · 词汇</div>
+          <div id="pa-vocab"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-section__title">🔤 Letters and sounds · 语音</div>
+          <div id="pa-phonics"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-section__title">✨ 核心句型</div>
+          <div id="pa-sentences"></div>
+        </section>
+      </div>
+
+      <!-- ====== PART B ====== -->
+      <div class="part-panel" data-part="B" id="part-B">
+        <section class="content-section">
+          <div class="content-section__title">💬 Let's talk · 对话</div>
+          <p style="color:var(--c-gray);font-size:.9rem;margin-bottom:.5rem">How can we be a good friend? 我们如何能够成为一个好朋友?</p>
+          <div id="pb-dialogue"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-section__title">📝 Let's learn · 词汇</div>
+          <div id="pb-vocab"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-section__title">✨ 核心句型</div>
+          <div id="pb-sentences"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-section__title">📖 Start to read</div>
+          <div id="pb-startread"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-section__title">📚 Reading time</div>
+          <div id="pb-reading"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-section__title">🃏 重点词汇（网格 / 闪卡）</div>
+          <div id="pb-flashcards"></div>
+        </section>
+      </div>
+
+      <!-- ====== PART C ====== -->
+      <div class="part-panel" data-part="C" id="part-C">
+        <section class="content-section">
+          <div class="content-section__title">🎨 Project · 单元实践</div>
+          <p style="color:var(--c-gray);font-size:.9rem;margin-bottom:.75rem">Make a mind map of making friends 制作一个交友的思维导图</p>
+          <div id="pc-project"></div>
+        </section>
+      </div>
+
+      <!-- ====== MUST-KNOW ====== -->
+      <section class="section--tight" id="must-know">
+        <h2 style="text-align:center;margin-bottom:1rem">⭐ 本单元必考点</h2>
+        <div class="must-know-grid" id="mk-grid"></div>
+      </section>
+
+      <!-- ====== UNIT REVIEW ====== -->
+      <section class="section--tight" id="unit-review">
+        <h2 style="text-align:center;margin-bottom:1rem">📚 单元复习</h2>
+        <div id="review-score" style="text-align:center;font-size:1rem;font-weight:700;color:var(--c-orange);margin-bottom:.75rem"></div>
+        <div class="review-list" id="review-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="../assets/js/pages/unit1.js"></script>
+  <script type="module">
+    import { initUnit1 } from '../assets/js/pages/unit1.js';
+    initUnit1();
+  </script>
+</body>
+</html>

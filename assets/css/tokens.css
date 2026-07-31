@@ -1,0 +1,60 @@
+/* === Design Tokens === */
+:root {
+  /* Colors — 教材帮风格 */
+  --c-yellow:   #FFD429;
+  --c-green:    #6DBE45;
+  --c-orange:   #FF8C2B;
+  --c-blue:     #3DA5E0;
+  --c-purple:   #B07ACC;
+  --c-red:      #FF6B6B;
+  --c-pink:     #FF7EB3;
+  --c-cream:    #FFF8E7;
+  --c-cream2:   #FFF3D6;
+  --c-ink:      #2D3142;
+  --c-gray:     #8890A4;
+  --c-gray2:    #B0B7C3;
+  --c-gray3:    #E0E4E8;
+  --c-bg:       #FBFBFB;
+  --c-surface:  #FFFFFF;
+
+  /* Shadows — 童趣硬阴影 */
+  --shadow-sm:  0 3px 0 rgba(0,0,0,.06);
+  --shadow-md:  0 6px 0 rgba(0,0,0,.08);
+  --shadow-lg:  0 10px 0 rgba(0,0,0,.10);
+  --shadow-card-hover: 0 12px 20px rgba(0,0,0,.12);
+
+  /* Radii */
+  --radius-xs:  6px;
+  --radius-sm:  10px;
+  --radius-md:  16px;
+  --radius-lg:  24px;
+  --radius-xl:  32px;
+
+  /* Typography */
+  --font-cn:    "ZCOOL KuaiLe", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --font-en:    "Baloo 2", "Fredoka", "Comic Sans MS", cursive, sans-serif;
+  --font-mono:  "SF Mono", "Fira Code", monospace;
+
+  /* Sizing */
+  --max-width:  1200px;
+  --nav-height: 64px;
+
+  /* Transitions */
+  --ease:       cubic-bezier(0.4, 0, 0.2, 1);
+  --fast:       150ms;
+  --normal:     250ms;
+  --slow:       500ms;
+}
+
+/* Unit theme colors — matches textbook */
+[data-unit-theme="u1"] { --theme: var(--c-green);  }
+[data-unit-theme="u2"] { --theme: var(--c-purple); }
+[data-unit-theme="u3"] { --theme: var(--c-orange); }
+[data-unit-theme="u4"] { --theme: var(--c-blue);   }
+[data-unit-theme="u5"] { --theme: var(--c-pink);   }
+[data-unit-theme="u6"] { --theme: var(--c-red);    }
+
+/* Part indicators */
+[data-part="A"] { --part-color: var(--c-blue);   }
+[data-part="B"] { --part-color: var(--c-purple); }
+[data-part="C"] { --part-color: var(--c-orange); }

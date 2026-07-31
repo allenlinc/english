@@ -1,0 +1,109 @@
+{
+  "grade": 3,
+  "title": "人教版 RP · 三年级上册",
+  "titleEn": "PEP English · Grade 3 Book A",
+  "term": "2025 秋",
+  "totalSections": {
+    "u1": 11,
+    "u2": 11,
+    "u3": 11,
+    "u4": 11,
+    "u5": 11,
+    "u6": 11,
+    "rev": 6
+  },
+  "units": [
+    {
+      "id": "u1",
+      "number": 1,
+      "titleEn": "Making friends",
+      "titleZh": "交朋友",
+      "color": "#6DBE45",
+      "icon": "🤝",
+      "partA": "How do we greet friends?",
+      "partB": "How can we be a good friend?",
+      "partC": "Make a mind map of making friends",
+      "url": "grade3/unit1.html"
+    },
+    {
+      "id": "u2",
+      "number": 2,
+      "titleEn": "Different families",
+      "titleZh": "不同的家庭",
+      "color": "#B07ACC",
+      "icon": "👨‍👩‍👧‍👦",
+      "partA": "Who lives with you?",
+      "partB": "How are families different?",
+      "partC": "Make a family tree",
+      "url": "#",
+      "coming": true
+    },
+    {
+      "id": "u3",
+      "number": 3,
+      "titleEn": "Amazing animals",
+      "titleZh": "神奇的动物",
+      "color": "#FF8C2B",
+      "icon": "🦁",
+      "partA": "What pets do you know?",
+      "partB": "What wild animals do you know?",
+      "partC": "Make an animal picture book",
+      "url": "#",
+      "coming": true
+    },
+    {
+      "id": "u4",
+      "number": 4,
+      "titleEn": "Plants around us",
+      "titleZh": "我们身边的植物",
+      "color": "#3DA5E0",
+      "icon": "🌿",
+      "partA": "What do we get from plants?",
+      "partB": "How can we help plants?",
+      "partC": "Make a paper garden",
+      "url": "#",
+      "coming": true
+    },
+    {
+      "id": "u5",
+      "number": 5,
+      "titleEn": "The colourful world",
+      "titleZh": "五彩缤纷的世界",
+      "color": "#FF7EB3",
+      "icon": "🎨",
+      "partA": "What colours do you see?",
+      "partB": "How do colours help us?",
+      "partC": "Make a colour flip book",
+      "url": "#",
+      "coming": true
+    },
+    {
+      "id": "u6",
+      "number": 6,
+      "titleEn": "Useful numbers",
+      "titleZh": "有用的数字",
+      "color": "#FF6B6B",
+      "icon": "🔢",
+      "partA": "When do we use numbers?",
+      "partB": "How useful are numbers?",
+      "partC": "Make a birthday card",
+      "url": "#",
+      "coming": true
+    }
+  ],
+  "revision": {
+    "id": "rev",
+    "titleEn": "Being a good guest",
+    "titleZh": "做一个好客人",
+    "color": "#2D3142",
+    "icon": "🏠",
+    "url": "#",
+    "coming": true
+  },
+  "features": {
+    "vocabCount": 18,
+    "phonicsCount": 4,
+    "sentenceCount": 10,
+    "reviewQuestions": 5
+  }
+}
