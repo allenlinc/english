@@ -44,6 +44,7 @@ export function renderMatcher(container, question, onResult) {
         elm.classList.add('selected');
       }
       const wordBtn = el('span', {
+        className: 'matcher-item__icon',
         style: 'cursor:pointer;margin-right:.25rem', title: '听发音',
         onClick: (e) => { e.stopPropagation(); TTS.speakWord(item.word); }
       }, '🔊 ');
@@ -80,7 +81,7 @@ export function renderMatcher(container, question, onResult) {
           }
         }
       });
-      elm.appendChild(el('span', { style: 'font-size:1.3rem' }, item.icon || ''));
+      elm.appendChild(el('span', { className: 'matcher-item__icon' }, item.icon || ''));
       elm.appendChild(document.createTextNode(` ${item.zh || ''}`));
       rightCol.appendChild(elm);
     }

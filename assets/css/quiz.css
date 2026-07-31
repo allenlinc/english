@@ -69,8 +69,12 @@
   background: var(--c-surface); box-shadow: var(--shadow-sm);
   cursor: pointer; font-size: .95rem;
   border: 2px solid transparent; transition: all var(--fast) var(--ease);
-  height: 50px;            /* 固定高度，左右两列每行严格等高对齐 */
-  white-space: nowrap; overflow: hidden;
+  min-height: 44px;         /* 每行等高基准 */
+}
+.matcher-item__icon {
+  font-size: 1.15rem;       /* 左右图标统一大小，避免行高差 */
+  line-height: 1;
+}
 }
 .matcher-item:hover { background: var(--c-cream2); }
 .matcher-item.selected { border-color: var(--c-blue); background: #E3F0FF; }
