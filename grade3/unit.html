@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>单元学习 — 三年级英语同步学</title>
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/unit.css">
+  <link rel="stylesheet" href="../assets/css/quiz.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <svg width="36" height="36"><use href="../assets/img/mascot-star.svg#star"/></svg>
+        英语同步学
+      </a>
+      <div class="nav-links">
+        <a href="../index.html">首页</a>
+        <a href="../grade3.html">三年级</a>
+        <a href="#" id="nav-current-unit" class="active">单元</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-wrap unit-page" id="unit-page-root">
+    <div class="container">
+      <!-- Breadcrumb (filled by JS) -->
+      <div class="breadcrumb" id="breadcrumb"></div>
+
+      <!-- Unit Header (filled by JS) -->
+      <header class="unit-header" id="unit-header"></header>
+
+      <!-- Left sidebar navigation + content -->
+      <div class="unit-layout">
+
+        <!-- Sidebar nav (filled by JS) -->
+        <aside class="unit-nav">
+          <div class="unit-nav__title">📚 本单元导航</div>
+          <nav id="unit-nav-links"></nav>
+          <button class="btn btn-accent btn-sm unit-nav__test" id="nav-mini-test" style="margin-top:1rem;width:100%">📝 必考点小测</button>
+        </aside>
+
+        <div class="unit-content">
+
+      <!-- Learning Objectives -->
+      <section class="section--tight" id="sec-objectives">
+        <div class="objectives">
+          <h3 style="margin-bottom:.5rem">🎯 学习目标</h3>
+          <ol id="objectives-list"></ol>
+        </div>
+      </section>
+
+      <!-- Part Tabs -->
+      <section class="section--tight">
+        <div class="tabs" role="tablist" id="part-tabs"></div>
+      </section>
+
+      <!-- Part Panels (filled by JS) -->
+      <div id="unit-panels"></div>
+
+        </div><!-- /unit-content -->
+      </div><!-- /unit-layout -->
+    </div>
+  </main>
+
+  <script type="module" src="../assets/js/pages/unit.js"></script>
+  <script type="module">
+    import { initUnit } from '../assets/js/pages/unit.js';
+    initUnit();
+  </script>
+</body>
+</html>

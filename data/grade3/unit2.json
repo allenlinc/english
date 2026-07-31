@@ -1,0 +1,501 @@
+{
+  "id": "g3u2",
+  "number": 2,
+  "titleEn": "Different families",
+  "titleZh": "不同的家庭",
+  "theme": "家庭与家庭生活",
+  "totalSections": 11,
+  "objectives": [
+    {
+      "text": "能够介绍家庭成员，询问并确认对方的家庭成员，在交流中礼貌回应。",
+      "icon": "🎯"
+    },
+    {
+      "text": "能够识别和梳理有关家庭成员的单词和词组，了解相关的正式与非正式用语。",
+      "icon": "🗣️"
+    },
+    {
+      "text": "能够读出字母 Ee—Hh 的名称音，辨别它们在单词中的发音，识别大小写形式并在四线格上正确书写。",
+      "icon": "🔤"
+    },
+    {
+      "text": "能够借助图片和标题的提示，理解语篇的主题，获取关键信息。",
+      "icon": "📖"
+    }
+  ],
+  "parts": {
+    "A": {
+      "id": "A",
+      "label": "Part A · 谁和你一起生活",
+      "intro": "Who lives with you? 谁和你一起生活?",
+      "dialogue": {
+        "lines": [
+          {
+            "speaker": "Chen Jie",
+            "en": "Mum! Dad! This is my friend, Sarah Miller.",
+            "zh": "妈妈！爸爸！这是我的朋友萨拉·米勒。"
+          },
+          {
+            "speaker": "Mum and Dad",
+            "en": "Hi, Sarah.",
+            "zh": "你好，萨拉。"
+          },
+          {
+            "speaker": "Chen Jie",
+            "en": "This is my grandma. This is my grandpa.",
+            "zh": "这是我的奶奶。这是我的爷爷。"
+          },
+          {
+            "speaker": "Grandma and Grandpa",
+            "en": "Nice to meet you.",
+            "zh": "见到你很高兴。"
+          }
+        ]
+      },
+      "vocab": [
+        {
+          "word": "grandmother",
+          "zh": "（外）祖母；奶奶；姥姥；外婆",
+          "icon": "👵",
+          "example": "This is my grandmother.",
+          "exampleZh": "这是我的祖母。"
+        },
+        {
+          "word": "grandfather",
+          "zh": "（外）祖父；爷爷；姥爷；外公",
+          "icon": "👴",
+          "example": "This is my grandfather.",
+          "exampleZh": "这是我的祖父。"
+        },
+        {
+          "word": "mother",
+          "zh": "母亲；妈妈",
+          "icon": "👩",
+          "example": "This is my mother.",
+          "exampleZh": "这是我的妈妈。"
+        },
+        {
+          "word": "father",
+          "zh": "父亲；爸爸",
+          "icon": "👨",
+          "example": "This is my father.",
+          "exampleZh": "这是我的爸爸。"
+        },
+        {
+          "word": "me",
+          "zh": "我",
+          "icon": "🧒",
+          "example": "This is me.",
+          "exampleZh": "这是我。"
+        },
+        {
+          "word": "sister",
+          "zh": "姐；妹",
+          "icon": "👧",
+          "example": "This is my sister.",
+          "exampleZh": "这是我的姐姐/妹妹。"
+        }
+      ],
+      "phonics": [
+        {
+          "letter": "Ee",
+          "sound": "/iː/",
+          "example": "egg",
+          "exampleZh": "蛋",
+          "memory": "Ee 像山翻倒，/iː/ 像小鱼吐泡泡"
+        },
+        {
+          "letter": "Ff",
+          "sound": "/ef/",
+          "example": "fish",
+          "exampleZh": "鱼",
+          "memory": "Ff 像站牌，/ef/ 像轻轻呼气"
+        },
+        {
+          "letter": "Gg",
+          "sound": "/dʒiː/",
+          "example": "girl",
+          "exampleZh": "女孩",
+          "memory": "Gg 像手半握，/dʒiː/ 像小鸭子嘎嘎"
+        },
+        {
+          "letter": "Hh",
+          "sound": "/eɪtʃ/",
+          "example": "hot",
+          "exampleZh": "热的",
+          "memory": "Hh 像梯子，/eɪtʃ/ 像喝水声"
+        }
+      ],
+      "coreSentences": [
+        {
+          "en": "This is my friend, Sarah Miller.",
+          "zh": "这是我的朋友萨拉·米勒。",
+          "blocks": [
+            "This",
+            "is",
+            "my",
+            "friend",
+            ",",
+            "Sarah Miller",
+            "."
+          ]
+        },
+        {
+          "en": "This is my family.",
+          "zh": "这是我的家庭。",
+          "blocks": [
+            "This",
+            "is",
+            "my",
+            "family",
+            "."
+          ]
+        },
+        {
+          "en": "This is my grandma. This is my grandpa.",
+          "zh": "这是我的奶奶。这是我的爷爷。",
+          "blocks": [
+            "This",
+            "is",
+            "my",
+            "grandma",
+            ".",
+            "This",
+            "is",
+            "my",
+            "grandpa",
+            "."
+          ]
+        },
+        {
+          "en": "Nice to meet you.",
+          "zh": "见到你很高兴。",
+          "blocks": [
+            "Nice",
+            "to",
+            "meet",
+            "you",
+            "."
+          ]
+        }
+      ]
+    },
+    "B": {
+      "id": "B",
+      "label": "Part B · 家庭有何不同",
+      "intro": "How are families different? 家庭有何不同?",
+      "dialogue": {
+        "lines": [
+          {
+            "speaker": "Chen Jie",
+            "en": "Sarah, you have a big family. Is this your sister?",
+            "zh": "萨拉，你有一个大家庭。这是你妹妹吗？"
+          },
+          {
+            "speaker": "Sarah",
+            "en": "No, it's my cousin.",
+            "zh": "不，是我表妹。"
+          },
+          {
+            "speaker": "Chen Jie",
+            "en": "Is that your brother?",
+            "zh": "那是你弟弟吗？"
+          },
+          {
+            "speaker": "Sarah",
+            "en": "Yes, it is.",
+            "zh": "对，是的。"
+          }
+        ]
+      },
+      "vocab": [
+        {
+          "word": "have",
+          "zh": "有",
+          "icon": "✋",
+          "example": "I have a big family.",
+          "exampleZh": "我有一个大家庭。"
+        },
+        {
+          "word": "big",
+          "zh": "大的",
+          "icon": "⬆️",
+          "example": "You have a big family.",
+          "exampleZh": "你有一个大家庭。"
+        },
+        {
+          "word": "brother",
+          "zh": "哥；弟",
+          "icon": "👦",
+          "example": "This is my brother.",
+          "exampleZh": "这是我的弟弟。"
+        },
+        {
+          "word": "baby sister",
+          "zh": "小妹妹",
+          "icon": "👶",
+          "example": "I have a baby sister.",
+          "exampleZh": "我有一个小妹妹。"
+        },
+        {
+          "word": "uncle",
+          "zh": "伯父；叔父；舅父；姑父；姨父",
+          "icon": "🧔",
+          "example": "This is my uncle.",
+          "exampleZh": "这是我的叔叔。"
+        },
+        {
+          "word": "aunt",
+          "zh": "伯母；婶母；舅母；姑母；姨母",
+          "icon": "👩‍🦱",
+          "example": "This is my aunt.",
+          "exampleZh": "这是我的阿姨。"
+        },
+        {
+          "word": "cousin",
+          "zh": "堂（表）兄弟；堂（表）姐妹",
+          "icon": "👫",
+          "example": "This is my cousin.",
+          "exampleZh": "这是我的表妹。"
+        },
+        {
+          "word": "some",
+          "zh": "一些",
+          "icon": "🔢",
+          "example": "Some families are small.",
+          "exampleZh": "一些家庭很小。"
+        },
+        {
+          "word": "small",
+          "zh": "小的",
+          "icon": "⬇️",
+          "example": "I have a small family.",
+          "exampleZh": "我有一个小家庭。"
+        }
+      ],
+      "coreSentences": [
+        {
+          "en": "Is this your sister?",
+          "zh": "这是你妹妹吗？",
+          "blocks": [
+            "Is",
+            "this",
+            "your",
+            "sister",
+            "?"
+          ]
+        },
+        {
+          "en": "No, it's my cousin.",
+          "zh": "不，是我表妹。",
+          "blocks": [
+            "No",
+            ",",
+            "it's",
+            "my",
+            "cousin",
+            "."
+          ]
+        },
+        {
+          "en": "Is that your brother?",
+          "zh": "那是你弟弟吗？",
+          "blocks": [
+            "Is",
+            "that",
+            "your",
+            "brother",
+            "?"
+          ]
+        },
+        {
+          "en": "Yes, it is.",
+          "zh": "对，是的。",
+          "blocks": [
+            "Yes",
+            ",",
+            "it",
+            "is",
+            "."
+          ]
+        },
+        {
+          "en": "You have a big family.",
+          "zh": "你有一个大家庭。",
+          "blocks": [
+            "You",
+            "have",
+            "a",
+            "big",
+            "family",
+            "."
+          ]
+        }
+      ],
+      "startToRead": {
+        "title": "Families are different",
+        "titleZh": "家庭是不同的",
+        "passage": [
+          "This is my mum. And this is my dad.",
+          "My family is big.",
+          "Some families are small. Some are big.",
+          "Families are different, but family love is the same."
+        ]
+      },
+      "readingTime": {
+        "title": "Family Poems",
+        "titleZh": "家庭诗",
+        "paragraphs": [
+          "This is my family.\nI play with my brother.\nWe share.\nWe listen with care.\nI have a small family.\nI love my small family.",
+          "This is my family.\nI play with my brothers.\nI share with my sisters.\nI talk with my cousins.\nWe listen with care.\nI have a big family.\nI love my big family."
+        ]
+      }
+    },
+    "C": {
+      "id": "C",
+      "label": "Part C · 单元实践任务",
+      "intro": "Make a family tree 制作一个家谱图",
+      "project": {
+        "title": "制作一个家谱图",
+        "titleEn": "Make a family tree",
+        "steps": [
+          {
+            "icon": "✏️",
+            "label": "准备一张白纸或卡纸、彩笔和全家福照片。"
+          },
+          {
+            "icon": "👨‍👩‍👧",
+            "label": "在纸上画一棵家庭树，把爷爷、奶奶（或外公、外婆）放在最上方。"
+          },
+          {
+            "icon": "🌳",
+            "label": "依次画出爸爸、妈妈、叔叔、阿姨等，再在最下面画出自己的位置，完成家谱图。"
+          },
+          {
+            "icon": "🗣️",
+            "label": "用英语向同学介绍：This is my family tree. This is my..."
+          }
+        ],
+        "meaning": "复习巩固有关家庭成员的词汇和句子，理解不同家庭的成员构成有所不同，在综合实践中运用所学语言。",
+        "extension": "拓展学习与家人相处方式的表达法，更为深入地理解家庭之间的差异，家人之间有多种表达爱的方式，爱也是组成家庭的一部分。"
+      }
+    }
+  },
+  "mustKnow": {
+    "vocab": [
+      "family",
+      "mother",
+      "father",
+      "sister",
+      "brother",
+      "grandmother",
+      "grandfather",
+      "me",
+      "have",
+      "big",
+      "small",
+      "cousin",
+      "uncle",
+      "aunt",
+      "baby",
+      "some"
+    ],
+    "vocabCount": 16,
+    "sentences": [
+      "This is my friend, Sarah Miller.",
+      "This is my family.",
+      "Is this your sister?",
+      "No, it's my cousin.",
+      "Is that your brother?",
+      "Yes, it is.",
+      "You have a big family."
+    ],
+    "sentenceCount": 7,
+    "phonics": [
+      "Ee /iː/",
+      "Ff /ef/",
+      "Gg /dʒiː/",
+      "Hh /eɪtʃ/"
+    ],
+    "phonicsCount": 4,
+    "test": [
+      {
+        "id": "g3u2-mk-q1",
+        "type": "listen-pick",
+        "prompt": "听单词，选出对应的中文意思。",
+        "audio": "grandmother",
+        "options": [
+          "妈妈",
+          "奶奶",
+          "姐姐",
+          "阿姨"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "g3u2-mk-q2",
+        "type": "multiple-choice",
+        "prompt": "'这是我的家庭' 对应的英文是？",
+        "options": [
+          "This is my family.",
+          "This is my friend.",
+          "That is my dog.",
+          "I have a cat."
+        ],
+        "answer": 0
+      },
+      {
+        "id": "g3u2-mk-q3",
+        "type": "multiple-choice",
+        "prompt": "—Is that your brother? —____",
+        "options": [
+          "No, I don't.",
+          "Yes, I do.",
+          "Yes, it is.",
+          "No, it isn't."
+        ],
+        "answer": 2
+      },
+      {
+        "id": "g3u2-mk-q4",
+        "type": "matcher",
+        "prompt": "把单词和对应的意思连起来：",
+        "pairs": [
+          {
+            "word": "mother",
+            "icon": "👩",
+            "zh": "母亲；妈妈"
+          },
+          {
+            "word": "father",
+            "icon": "👨",
+            "zh": "父亲；爸爸"
+          },
+          {
+            "word": "sister",
+            "icon": "👧",
+            "zh": "姐；妹"
+          },
+          {
+            "word": "brother",
+            "icon": "👦",
+            "zh": "哥；弟"
+          }
+        ]
+      },
+      {
+        "id": "g3u2-mk-q5",
+        "type": "multiple-choice",
+        "prompt": "'This is my _____.' 填哪个词可以表示'爷爷'？",
+        "options": [
+          "grandma",
+          "grandpa",
+          "mother",
+          "sister"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "review": []
+}

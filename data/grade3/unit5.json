@@ -1,0 +1,175 @@
+{
+  "id": "g3u5",
+  "number": 5,
+  "titleEn": "The colourful world",
+  "titleZh": "五彩缤纷的世界",
+  "theme": "颜色与生活",
+  "totalSections": 11,
+  "objectives": [
+    { "text": "能够谈论自己看到的和喜欢的颜色，并询问他人的喜好。", "icon": "💬" },
+    { "text": "能够说出不同的颜色单词，介绍生活中常见事物的颜色。", "icon": "🎨" },
+    { "text": "能够利用图片信息阅读短文，理解不同颜色代表的不同含义。", "icon": "📖" },
+    { "text": "能够正确读写字母 Qq—Rr—Ss—Tt—Uu，辨别它们在单词中的发音。", "icon": "🔤" }
+  ],
+  "parts": {
+    "A": {
+      "id": "A",
+      "label": "Part A · 你看见什么颜色",
+      "intro": "What colours do you see? 你看见什么颜色？",
+      "dialogue": {
+        "lines": [
+          { "speaker": "Mr Jones", "en": "What colour is it?", "zh": "它是什么颜色？" },
+          { "speaker": "Sarah", "en": "It's orange.", "zh": "它是橙红色的。" },
+          { "speaker": "John", "en": "It's green.", "zh": "它是绿色的。" },
+          { "speaker": "Mr Jones", "en": "Look! Red and blue make purple.", "zh": "看！红色加蓝色是紫色。" },
+          { "speaker": "Sarah", "en": "Wow!", "zh": "哇！" }
+        ]
+      },
+      "vocab": [
+        { "word": "colour", "zh": "颜色", "icon": "🎨", "example": "The rainbow has 7 colours.", "exampleZh": "彩虹有 7 种颜色。" },
+        { "word": "orange", "zh": "橙红色；橙红色的", "icon": "🟠", "example": "I like orange. I have an orange fish.", "exampleZh": "我喜欢橙红色。我有一条橙红色的鱼。" },
+        { "word": "green", "zh": "绿色；绿色的", "icon": "🟢", "example": "Trees are green.", "exampleZh": "树是绿色的。" },
+        { "word": "red", "zh": "红色；红色的", "icon": "🔴", "example": "I have red apples.", "exampleZh": "我有红色的苹果。" },
+        { "word": "blue", "zh": "蓝色；蓝色的", "icon": "🔵", "example": "The sky is blue.", "exampleZh": "天空是蓝色的。" },
+        { "word": "make", "zh": "使出现；做", "icon": "🖌️", "example": "Yellow and blue make green.", "exampleZh": "黄色加蓝色是绿色。" },
+        { "word": "purple", "zh": "紫色；紫色的", "icon": "🟣", "example": "I see purple. The starfish is purple.", "exampleZh": "我看见紫色。海星是紫色的。" },
+        { "word": "brown", "zh": "棕色；棕色的", "icon": "🟤", "example": "Monkeys are brown.", "exampleZh": "猴子是棕色的。" },
+        { "word": "bear", "zh": "熊", "icon": "🐻", "example": "Do you like bears?", "exampleZh": "你喜欢熊吗？" },
+        { "word": "yellow", "zh": "黄色；黄色的", "icon": "🟡", "example": "Bananas are yellow.", "exampleZh": "香蕉是黄色的。" },
+        { "word": "duck", "zh": "鸭", "icon": "🦆", "example": "My pet is a little yellow duck.", "exampleZh": "我的宠物是一只小黄鸭。" },
+        { "word": "sea", "zh": "海；海洋", "icon": "🌊", "example": "Sharks live in the sea.", "exampleZh": "鲨鱼生活在海里。" }
+      ],
+      "phonics": [
+        { "letter": "Qq", "sound": "/kw/", "example": "queen", "exampleZh": "女王", "memory": "Qq 像气球带着尾巴，/kw/ 像鸭子呱呱叫时发出的两个音" },
+        { "letter": "Rr", "sound": "/r/", "example": "rabbit", "exampleZh": "兔子", "memory": "Rr 像小狗耳朵卷起来，/r/ 像小狗轻轻低吼的声音" },
+        { "letter": "Ss", "sound": "/s/", "example": "sister", "exampleZh": "姐姐", "memory": "Ss 像蛇的身体弯弯的，/s/ 像蛇发出的嘶嘶声" },
+        { "letter": "Tt", "sound": "/t/", "example": "tea", "exampleZh": "茶", "memory": "Tt 像一把小锤子，/t/ 像时钟滴答滴答的声音" },
+        { "letter": "Uu", "sound": "/ʌ/", "example": "duck", "exampleZh": "鸭子", "memory": "Uu 像一个小水井，/ʌ/ 像突然发出惊呼的声音" }
+      ],
+      "coreSentences": [
+        { "en": "What colour is it?", "zh": "它是什么颜色？", "blocks": ["What", "colour", "is", "it", "?"] },
+        { "en": "It's orange.", "zh": "它是橙红色的。", "blocks": ["It's", "orange", "."] },
+        { "en": "It's green.", "zh": "它是绿色的。", "blocks": ["It's", "green", "."] },
+        { "en": "Red and blue make purple.", "zh": "红色加蓝色是紫色。", "blocks": ["Red", "and", "blue", "make", "purple", "."] },
+        { "en": "Yellow and blue make green.", "zh": "黄色加蓝色是绿色。", "blocks": ["Yellow", "and", "blue", "make", "green", "."] }
+      ]
+    },
+    "B": {
+      "id": "B",
+      "label": "Part B · 颜色怎样帮助我们",
+      "intro": "How do colours help us? 颜色怎样帮助我们？",
+      "dialogue": {
+        "lines": [
+          { "speaker": "Sarah", "en": "What colours do you like?", "zh": "你喜欢什么颜色？" },
+          { "speaker": "Chen Jie", "en": "I like red and pink.", "zh": "我喜欢红色和粉色。" },
+          { "speaker": "Sarah", "en": "OK. Let's draw some red and pink flowers.", "zh": "好的。我们一起画一些红色和粉色的花吧。" },
+          { "speaker": "Sarah", "en": "And the birds?", "zh": "还有鸟呢？" },
+          { "speaker": "Chen Jie", "en": "Let's draw some purple and brown birds.", "zh": "我们一起画一些紫色和棕色的鸟吧。" }
+        ]
+      },
+      "vocab": [
+        { "word": "pink", "zh": "粉色；粉色的", "icon": "🌸", "example": "I like pink.", "exampleZh": "我喜欢粉色。" },
+        { "word": "draw", "zh": "画", "icon": "✏️", "example": "Let's draw some animals.", "exampleZh": "我们一起画一些动物吧。" },
+        { "word": "white", "zh": "白色；白色的", "icon": "⚪", "example": "I like white. My cat is white.", "exampleZh": "我喜欢白色。我的猫是白色的。" },
+        { "word": "black", "zh": "黑色；黑色的", "icon": "⚫", "example": "I see black. A black dog!", "exampleZh": "我看见黑色。一条黑色的狗！" }
+      ],
+      "coreSentences": [
+        { "en": "What colours do you like?", "zh": "你喜欢什么颜色？", "blocks": ["What", "colours", "do", "you", "like", "?"] },
+        { "en": "I like red and pink.", "zh": "我喜欢红色和粉色。", "blocks": ["I", "like", "red", "and", "pink", "."] },
+        { "en": "Let's draw some red and pink flowers.", "zh": "我们一起画一些红色和粉色的花吧。", "blocks": ["Let's", "draw", "some", "red", "and", "pink", "flowers", "."] },
+        { "en": "Let's draw some purple and brown birds.", "zh": "我们一起画一些紫色和棕色的鸟吧。", "blocks": ["Let's", "draw", "some", "purple", "and", "brown", "birds", "."] },
+        { "en": "Use again!", "zh": "再次利用！", "blocks": ["Use", "again", "!"] },
+        { "en": "Be careful!", "zh": "小心！", "blocks": ["Be", "careful", "!"] }
+      ],
+      "startToRead": {
+        "title": "Colours can talk!",
+        "titleZh": "颜色会说话！",
+        "passage": [
+          "It's red. Red can say \"No!\"",
+          "It's green. Green can say \"Go!\"",
+          "It's blue. Blue can say \"Use again!\"",
+          "It's yellow. Yellow can say \"Be careful!\""
+        ]
+      },
+      "readingTime": {
+        "title": "The life of a sunflower",
+        "titleZh": "一株向日葵的一生",
+        "paragraphs": [
+          "I am a sunflower. I am tall and green.",
+          "Then I am green and yellow.",
+          "Now I am a big yellow flower. Bees come. They are yellow and black. I give them food.",
+          "Now it is cold. I am green and brown.",
+          "I am gone. But my children grow."
+        ]
+      }
+    },
+    "C": {
+      "id": "C",
+      "label": "Part C · 单元实践任务",
+      "intro": "Make a colour flip book 制作一本颜色手翻书",
+      "project": {
+        "title": "制作一本颜色手翻书",
+        "titleEn": "Make a colour flip book",
+        "steps": [
+          { "icon": "🎨", "label": "选择几种你喜欢的颜色，想一想每种颜色代表的事物。" },
+          { "icon": "✂️", "label": "把彩色卡纸剪成小卡片，打孔装订成一本手翻书。" },
+          { "icon": "🖍️", "label": "在每张卡片上画上对应颜色的图案，贴上颜色标签。" },
+          { "icon": "📤", "label": "在课堂上翻动你的手翻书，用 \"I like ...\" 向同学介绍。" }
+        ],
+        "meaning": "能在综合实践活动中运用颜色相关语言介绍事物，感受并思考颜色给生活带来的影响，理解颜色对生活的重要意义。",
+        "extension": "和家人一起做一做手翻书，向他们介绍不同颜色代表的含义和作用。"
+      }
+    }
+  },
+  "mustKnow": {
+    "vocab": ["colour", "orange", "green", "red", "blue", "make", "purple", "brown", "bear", "yellow", "duck", "sea", "pink", "draw", "white", "black"],
+    "vocabCount": 16,
+    "sentences": ["What colour is it?", "It's orange.", "Red and blue make purple.", "What colours do you like?", "I like red and pink.", "Let's draw some flowers.", "Use again!", "Be careful!"],
+    "sentenceCount": 8,
+    "phonics": ["Qq /kw/", "Rr /r/", "Ss /s/", "Tt /t/", "Uu /ʌ/"],
+    "phonicsCount": 5,
+    "test": [
+      {
+        "id": "g3u5-mk-q1",
+        "type": "listen-pick",
+        "prompt": "听单词，选出对应的中文意思。",
+        "audio": "green",
+        "options": ["红色", "绿色", "紫色", "黄色"],
+        "answer": 1
+      },
+      {
+        "id": "g3u5-mk-q2",
+        "type": "multiple-choice",
+        "prompt": "\"Red and yellow make ___\" 空格处填哪个颜色？",
+        "options": ["orange", "green", "white", "purple"],
+        "answer": 0
+      },
+      {
+        "id": "g3u5-mk-q3",
+        "type": "multiple-choice",
+        "prompt": "\"Yellow and blue make ___\" 空格处应填什么颜色？",
+        "options": ["purple", "green", "white", "red"],
+        "answer": 1
+      },
+      {
+        "id": "g3u5-mk-q4",
+        "type": "multiple-choice",
+        "prompt": "字母 Ss 在单词中的发音是？",
+        "options": ["/ʌ/", "/kw/", "/s/", "/r/"],
+        "answer": 2
+      },
+      {
+        "id": "g3u5-mk-q5",
+        "type": "matcher",
+        "prompt": "把颜色单词和对应中文连起来：",
+        "pairs": [
+          { "word": "red", "icon": "🔴", "zh": "红色" },
+          { "word": "blue", "icon": "🔵", "zh": "蓝色" },
+          { "word": "yellow", "icon": "🟡", "zh": "黄色" },
+          { "word": "brown", "icon": "🟤", "zh": "棕色" }
+        ]
+      }
+    ]
+  },
+  "review": []
+}

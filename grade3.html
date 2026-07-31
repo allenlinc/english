@@ -124,7 +124,7 @@
         <h3 style="font-size:1.1rem">${rev.titleEn}</h3>
         <p style="font-size:.85rem;color:var(--c-gray)">${rev.titleZh}</p>
         <div class="progress-bar" style="margin:.5rem 0"><div class="progress-bar__fill" style="width:${revPct}%"></div></div>
-        <button class="btn btn-outline btn-sm" disabled>敬请期待</button>
+        <a href="${rev.url}" class="btn ${revPct >= 100 ? 'btn-green' : 'btn-primary'} btn-sm">${revPct >= 100 ? '复习完成' : '开始复习'}</a>
       </div>
     `;
   </script>

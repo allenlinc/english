@@ -1,0 +1,251 @@
+{
+  "id": "g3u6",
+  "number": 6,
+  "titleEn": "Useful numbers",
+  "titleZh": "有用的数字",
+  "theme": "数字与生活",
+  "totalSections": 11,
+  "objectives": [
+    { "text": "能够谈论年龄、物品数量和金额，用数字1到10表达数量信息。", "icon": "🎯" },
+    { "text": "能够说出数字1到10的单词，会用数字单词表达年龄和计数。", "icon": "🗣️" },
+    { "text": "能够读出字母 Vv—Zz 的名称音，辨别它们在单词中的发音，识别大小写形式并在四线格上正确书写。", "icon": "🔤" },
+    { "text": "能够借助图片和标题的提示，理解生日故事的主题，获取关键信息。", "icon": "📖" }
+  ],
+  "parts": {
+    "A": {
+      "id": "A",
+      "label": "Part A · 我们什么时候用到数字？",
+      "intro": "When do we use numbers? 我们什么时候用到数字?",
+      "dialogue": {
+        "lines": [
+          { "speaker": "Binbin", "en": "This is my brother, Sam.", "zh": "这是我的弟弟，萨姆。" },
+          { "speaker": "Sarah", "en": "Hi, Sam! This is my sister, Xinxin.", "zh": "嗨，萨姆！这是我的妹妹，欣欣。" },
+          { "speaker": "Xinxin", "en": "Hello, Xinxin!", "zh": "你好，欣欣！" },
+          { "speaker": "Xinxin", "en": "Hi, Sam!", "zh": "嗨，萨姆！" },
+          { "speaker": "Sarah", "en": "How old are you?", "zh": "你几岁了？" },
+          { "speaker": "Sam", "en": "I'm five years old.", "zh": "我五岁了。" },
+          { "speaker": "Xinxin", "en": "Me too.", "zh": "我也是。" }
+        ]
+      },
+      "vocab": [
+        { "word": "old", "zh": "(多少)岁；年纪；旧的", "icon": "👴", "example": "I'm five years old.", "exampleZh": "我五岁了。" },
+        { "word": "five", "zh": "五", "icon": "5️⃣", "example": "I have five yellow pens.", "exampleZh": "我有五支黄色的钢笔。" },
+        { "word": "year", "zh": "年纪；年", "icon": "📅", "example": "In the year 2025, my sister is 8 years old.", "exampleZh": "在2025年，我妹妹8岁。" },
+        { "word": "one", "zh": "一", "icon": "1️⃣", "example": "I have one red apple.", "exampleZh": "我有一个红苹果。" },
+        { "word": "two", "zh": "二", "icon": "2️⃣", "example": "Here are two yellow pears.", "exampleZh": "这里有两个黄色的梨。" },
+        { "word": "three", "zh": "三", "icon": "3️⃣", "example": "I see three balls.", "exampleZh": "我看见三个球。" },
+        { "word": "four", "zh": "四", "icon": "4️⃣", "example": "I have four pens. We can share.", "exampleZh": "我有四支笔。我们可以分享。" }
+      ],
+      "phonics": [
+        { "letter": "Vv", "sound": "/viː/", "example": "vegetable", "exampleZh": "蔬菜", "memory": "Vv 像胜利的手势，小写 v 像尖下巴" },
+        { "letter": "Ww", "sound": "/ˈdʌbljuː/", "example": "water", "exampleZh": "水", "memory": "Ww 像波浪，小写 w 像双 v" },
+        { "letter": "Xx", "sound": "/eks/", "example": "box", "exampleZh": "盒子", "memory": "Xx 像乘号，小写 x 像剪刀" },
+        { "letter": "Yy", "sound": "/waɪ/", "example": "yellow", "exampleZh": "黄色", "memory": "Yy 像树杈，小写 y 像嫩芽" },
+        { "letter": "Zz", "sound": "/ziː/", "example": "zebra", "exampleZh": "斑马", "memory": "Zz 像山路，小写 z 像数字2" }
+      ],
+      "coreSentences": [
+        { "en": "How old are you?", "zh": "你几岁了？", "blocks": ["How", "old", "are", "you", "?"] },
+        { "en": "I'm five years old.", "zh": "我五岁了。", "blocks": ["I'm", "five", "years", "old", "."] },
+        { "en": "Me too.", "zh": "我也是。", "blocks": ["Me", "too", "."] }
+      ]
+    },
+    "B": {
+      "id": "B",
+      "label": "Part B · 数字多么有用？",
+      "intro": "How useful are numbers? 数字多么有用?",
+      "dialogue": {
+        "lines": [
+          { "speaker": "Sam", "en": "How many apples?", "zh": "几个苹果？" },
+          { "speaker": "Sam", "en": "How many bananas?", "zh": "几根香蕉？" },
+          { "speaker": "Sarah", "en": "Two.", "zh": "两个。" },
+          { "speaker": "Sarah", "en": "Three. And one orange.", "zh": "三根。还有一个橙子。" },
+          { "speaker": "Sam", "en": "OK.", "zh": "好的。" },
+          { "speaker": "Sarah", "en": "I have ten yuan.", "zh": "我有十元。" },
+          { "speaker": "Sam", "en": "I have six yuan.", "zh": "我有六元。" },
+          { "speaker": "Both", "en": "Great! Let's go to the shop!", "zh": "好极了！我们一起去商店吧！" }
+        ]
+      },
+      "vocab": [
+        { "word": "ten", "zh": "十", "icon": "🔟", "example": "I have ten fingers.", "exampleZh": "我有十根手指。" },
+        { "word": "six", "zh": "六", "icon": "6️⃣", "example": "I have six books in my bag.", "exampleZh": "我的包里有六本书。" },
+        { "word": "seven", "zh": "七", "icon": "7️⃣", "example": "I can see seven flowers.", "exampleZh": "我能看到七朵花。" },
+        { "word": "eight", "zh": "八", "icon": "8️⃣", "example": "Eight apples. Eight yuan, please.", "exampleZh": "八个苹果。八元，谢谢。" },
+        { "word": "nine", "zh": "九", "icon": "9️⃣", "example": "I have five yuan. I have nine yuan.", "exampleZh": "我有五元。我有九元。" },
+        { "word": "o'clock", "zh": "(表示整点)……点钟", "icon": "🕐", "example": "It's seven o'clock. Let's go home!", "exampleZh": "四点了。我们一起回家吧！" },
+        { "word": "cut", "zh": "切；切块", "icon": "🔪", "example": "Happy birthday! This cut is for you.", "exampleZh": "生日快乐！这块是给你的。" },
+        { "word": "eat", "zh": "吃", "icon": "🍽️", "example": "I like apples. I eat an apple a day.", "exampleZh": "我喜欢苹果。我每天吃一个苹果。" },
+        { "word": "cake", "zh": "蛋糕", "icon": "🎂", "example": "Let's eat some cake!", "exampleZh": "我们一起来吃些蛋糕吧！" }
+      ],
+      "coreSentences": [
+        { "en": "How many apples?", "zh": "几个苹果？", "blocks": ["How", "many", "apples", "?"] },
+        { "en": "Two.", "zh": "两个。", "blocks": ["Two", "."] },
+        { "en": "Great! Let's go to the shop!", "zh": "好极了！我们一起去商店吧！", "blocks": ["Great", "!", "Let's", "go", "to", "the", "shop", "!"] },
+        { "en": "That's ten yuan, please.", "zh": "(共)十元，谢谢。", "blocks": ["That's", "ten", "yuan", ",", "please", "."] },
+        { "en": "Here you are.", "zh": "给您。", "blocks": ["Here", "you", "are", "."] },
+        { "en": "It's seven o'clock. Hurry!", "zh": "七点了。快点！", "blocks": ["It's", "seven", "o'clock", ".", "Hurry", "!"] }
+      ],
+      "startToRead": {
+        "title": "Sarah's birthday party",
+        "titleZh": "莎拉的生日派对",
+        "passage": [
+          "It's seven o'clock. Hurry!",
+          "One orange, two apples and three bananas.",
+          "Happy birthday!",
+          "Dogs do not eat cake, Sam!",
+          "Three cuts. Let's eat!",
+          "Oh, one more cut for the dog."
+        ]
+      },
+      "readingTime": {
+        "title": "The number six in different languages",
+        "titleZh": "不同语言中的数字六",
+        "paragraphs": [
+          "Numbers look different around the world.",
+          "Arabic numerals use: 1, 2, 3, 4, 5, 6...",
+          "Chinese characters use: 一、二、三、四、五、六...",
+          "Roman numerals use: I, II, III, IV, V, VI...",
+          "Jiaguwen (over 3000 years old) uses ancient symbols like 兦 for six."
+        ]
+      }
+    },
+    "C": {
+      "id": "C",
+      "label": "Part C · 单元实践任务",
+      "intro": "Make a birthday card 制作一张生日贺卡",
+      "project": {
+        "title": "制作一张生日贺卡",
+        "titleEn": "Make a birthday card",
+        "steps": [
+          { "icon": "✂️", "label": "准备材料：彩色卡纸、剪刀、胶水、彩笔等。" },
+          { "icon": "📝", "label": "制作贺卡主体：将彩色卡纸剪成适当形状和大小，然后对折。" },
+          { "icon": "🎨", "label": "添加细节：用彩色卡纸制作人物、花朵等图案，粘在贺卡上。用彩笔写上祝福语。" },
+          { "icon": "🎁", "label": "完成：等胶水干透后，生日贺卡制作完成。把贺卡送给朋友，送上祝福。" }
+        ],
+        "meaning": "能运用所学数字和句型设计并制作一张生日邀请卡或生日贺卡，学会表达对他人的祝福。",
+        "extension": "和家人一起为朋友或家人制作一张特别的生日卡片吧！"
+      }
+    }
+  },
+  "mustKnow": {
+    "vocab": ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "old", "year", "o'clock", "cut", "eat", "cake"],
+    "vocabCount": 16,
+    "sentences": ["How old are you?", "I'm … years old.", "Me too.", "How many…?", "Great! Let's go to the shop!", "That's … yuan, please.", "Here you are.", "It's … o'clock."],
+    "sentenceCount": 8,
+    "phonics": ["Vv /viː/", "Ww /ˈdʌbljuː/", "Xx /eks/", "Yy /waɪ/", "Zz /ziː/"],
+    "phonicsCount": 5,
+    "test": [
+      {
+        "id": "g3u6-mk-q1",
+        "type": "listen-pick",
+        "prompt": "听单词，选出对应的中文意思。",
+        "audio": "seven",
+        "options": ["六", "七", "八", "九"],
+        "answer": 1
+      },
+      {
+        "id": "g3u6-mk-q2",
+        "type": "multiple-choice",
+        "prompt": "\"你几岁了\" 用英语怎么问？",
+        "options": [
+          "How are you?",
+          "How old are you?",
+          "How many are you?",
+          "How old is you?"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "g3u6-mk-q3",
+        "type": "multiple-choice",
+        "prompt": "\"I have ten yuan.\" 的中文意思是？",
+        "options": [
+          "我十岁了。",
+          "我有十个苹果。",
+          "我有十元。",
+          "现在是十点。"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "g3u6-mk-q4",
+        "type": "multiple-choice",
+        "prompt": "字母 Yy 的名称音是？",
+        "options": [
+          "/waɪ/",
+          "/ziː/",
+          "/eks/",
+          "/viː/"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "g3u6-mk-q5",
+        "type": "matcher",
+        "prompt": "把数字单词和对应的意思连起来：",
+        "pairs": [
+          { "word": "three", "icon": "3️⃣", "zh": "三" },
+          { "word": "six", "icon": "6️⃣", "zh": "六" },
+          { "word": "nine", "icon": "9️⃣", "zh": "九" },
+          { "word": "ten", "icon": "🔟", "zh": "十" }
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "id": "g3u6-rv-q1",
+      "type": "listen-pick",
+      "prompt": "听单词，选出对应的中文意思。",
+      "audio": "eight",
+      "options": ["七", "八", "九", "十"],
+      "answer": 1
+    },
+    {
+      "id": "g3u6-rv-q2",
+      "type": "multiple-choice",
+      "prompt": "选出正确的句子：\"___ apples? — Two.\"",
+      "options": [
+        "How many",
+        "How much",
+        "How old",
+        "What many"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "g3u6-rv-q3",
+      "type": "multiple-choice",
+      "prompt": "\"Here you are.\" 的正确回应是？",
+      "options": [
+        "How old are you?",
+        "I'm fine, thanks.",
+        "Thank you.",
+        "I like it."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "g3u6-rv-q4",
+      "type": "multiple-choice",
+      "prompt": "\"It's seven o'clock.\" 表示什么意思？",
+      "options": [
+        "我有七个苹果。",
+        "我七岁了。",
+        "现在七点了。",
+        "这是第七个。"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "g3u6-rv-q5",
+      "type": "matcher",
+      "prompt": "把英文数字和中文连起来：",
+      "pairs": [
+        { "word": "one", "icon": "1️⃣", "zh": "一" },
+        { "word": "four", "icon": "4️⃣", "zh": "四" },
+        { "word": "five", "icon": "5️⃣", "zh": "五" },
+        { "word": "ten", "icon": "🔟", "zh": "十" }
+      ]
+    }
+  ]
+}

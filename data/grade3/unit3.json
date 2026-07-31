@@ -1,0 +1,597 @@
+{
+  "id": "g3u3",
+  "number": 3,
+  "titleEn": "Amazing animals",
+  "titleZh": "神奇的动物",
+  "theme": "常见的动物与动物的特征",
+  "totalSections": 11,
+  "objectives": [
+    {
+      "text": "能够围绕动物的基本信息进行问答，在交流中给出恰当回应。",
+      "icon": "🎯"
+    },
+    {
+      "text": "能够识别和梳理有关动物的单词和表达法，运用所学词汇介绍自己喜欢的动物。",
+      "icon": "🗣️"
+    },
+    {
+      "text": "能够读出字母 Ii—Ll 的名称音，辨别它们在单词中的发音，识别大小写形式并在四线格上正确书写。",
+      "icon": "🔤"
+    },
+    {
+      "text": "能够体会出语篇中标题、图片和文字之间的关系，利用图中的数字信息辅助理解句子的意义。",
+      "icon": "📖"
+    }
+  ],
+  "parts": {
+    "A": {
+      "id": "A",
+      "label": "Part A · 你认识什么宠物",
+      "intro": "What pets do you know? 你认识什么宠物?",
+      "dialogue": {
+        "lines": [
+          {
+            "speaker": "Wu Binbin",
+            "en": "Good morning, Mike!",
+            "zh": "早上好，迈克！"
+          },
+          {
+            "speaker": "Mike",
+            "en": "Good morning! Come in.",
+            "zh": "早上好！进来吧。"
+          },
+          {
+            "speaker": "Chen Jie",
+            "en": "I like your dog.",
+            "zh": "我喜欢你的狗。"
+          },
+          {
+            "speaker": "Mike",
+            "en": "Thanks. Do you have a pet?",
+            "zh": "谢谢。你们有宠物吗？"
+          },
+          {
+            "speaker": "Wu Binbin",
+            "en": "No, I don't.",
+            "zh": "不，我没有。"
+          },
+          {
+            "speaker": "Chen Jie",
+            "en": "Yes, I do. I have a cat.",
+            "zh": "是的，我有。我有一只猫。"
+          }
+        ]
+      },
+      "vocab": [
+        {
+          "word": "like",
+          "zh": "喜欢",
+          "icon": "❤️",
+          "example": "I like dogs.",
+          "exampleZh": "我喜欢狗。"
+        },
+        {
+          "word": "dog",
+          "zh": "狗",
+          "icon": "🐶",
+          "example": "I have a dog.",
+          "exampleZh": "我有一只狗。"
+        },
+        {
+          "word": "pet",
+          "zh": "宠物",
+          "icon": "🐾",
+          "example": "Do you have a pet?",
+          "exampleZh": "你有宠物吗？"
+        },
+        {
+          "word": "cat",
+          "zh": "猫",
+          "icon": "🐱",
+          "example": "I have a cat.",
+          "exampleZh": "我有一只猫。"
+        },
+        {
+          "word": "fish",
+          "zh": "鱼；鱼肉",
+          "icon": "🐟",
+          "example": "I like fish.",
+          "exampleZh": "我喜欢鱼。"
+        },
+        {
+          "word": "bird",
+          "zh": "鸟",
+          "icon": "🐦",
+          "example": "I like birds.",
+          "exampleZh": "我喜欢鸟。"
+        },
+        {
+          "word": "rabbit",
+          "zh": "兔",
+          "icon": "🐰",
+          "example": "I like rabbits.",
+          "exampleZh": "我喜欢兔子。"
+        }
+      ],
+      "phonics": [
+        {
+          "letter": "Ii",
+          "sound": "/aɪ/",
+          "example": "ill",
+          "exampleZh": "有病的",
+          "memory": "Ii 像木棍，/aɪ/ 像蜡烛的光"
+        },
+        {
+          "letter": "Jj",
+          "sound": "/dʒeɪ/",
+          "example": "job",
+          "exampleZh": "工作",
+          "memory": "Jj 像伞把，/dʒeɪ/ 像小鸡叽叽"
+        },
+        {
+          "letter": "Kk",
+          "sound": "/keɪ/",
+          "example": "Kim",
+          "exampleZh": "金姆",
+          "memory": "Kk 像正步走，/keɪ/ 像敲门声"
+        },
+        {
+          "letter": "Ll",
+          "sound": "/el/",
+          "example": "leg",
+          "exampleZh": "腿",
+          "memory": "Ll 像锄头，/el/ 像铃儿响"
+        }
+      ],
+      "coreSentences": [
+        {
+          "en": "Good morning, Mike!",
+          "zh": "早上好，迈克！",
+          "blocks": [
+            "Good",
+            "morning",
+            ",",
+            "Mike",
+            "!"
+          ]
+        },
+        {
+          "en": "I like your dog.",
+          "zh": "我喜欢你的狗。",
+          "blocks": [
+            "I",
+            "like",
+            "your",
+            "dog",
+            "."
+          ]
+        },
+        {
+          "en": "Do you have a pet?",
+          "zh": "你们有宠物吗？",
+          "blocks": [
+            "Do",
+            "you",
+            "have",
+            "a",
+            "pet",
+            "?"
+          ]
+        },
+        {
+          "en": "Yes, I do. I have a cat.",
+          "zh": "是的，我有。我有一只猫。",
+          "blocks": [
+            "Yes",
+            ",",
+            "I",
+            "do",
+            ".",
+            "I",
+            "have",
+            "a",
+            "cat",
+            "."
+          ]
+        },
+        {
+          "en": "No, I don't.",
+          "zh": "不，我没有。",
+          "blocks": [
+            "No",
+            ",",
+            "I",
+            "don't",
+            "."
+          ]
+        }
+      ]
+    },
+    "B": {
+      "id": "B",
+      "label": "Part B · 你认识什么野生动物",
+      "intro": "What wild animals do you know? 你认识什么野生动物?",
+      "dialogue": {
+        "lines": [
+          {
+            "speaker": "Miss White",
+            "en": "Let's go to the zoo!",
+            "zh": "我们一起去动物园吧！"
+          },
+          {
+            "speaker": "Students",
+            "en": "Great!",
+            "zh": "太好了！"
+          },
+          {
+            "speaker": "Chen Jie",
+            "en": "Look! What's this?",
+            "zh": "看！这是什么？"
+          },
+          {
+            "speaker": "Miss White",
+            "en": "It's a fox.",
+            "zh": "是只狐狸。"
+          },
+          {
+            "speaker": "Mike",
+            "en": "Miss White, what's that?",
+            "zh": "怀特老师，那是什么？"
+          },
+          {
+            "speaker": "Miss White",
+            "en": "It's a red panda.",
+            "zh": "是只小熊猫。"
+          },
+          {
+            "speaker": "Mike",
+            "en": "It's cute!",
+            "zh": "好可爱！"
+          }
+        ]
+      },
+      "vocab": [
+        {
+          "word": "go",
+          "zh": "去；走",
+          "icon": "🚶",
+          "example": "Let's go to the zoo.",
+          "exampleZh": "我们去动物园吧。"
+        },
+        {
+          "word": "zoo",
+          "zh": "动物园",
+          "icon": "🦁",
+          "example": "Let's go to the zoo.",
+          "exampleZh": "我们去动物园吧。"
+        },
+        {
+          "word": "fox",
+          "zh": "狐狸",
+          "icon": "🦊",
+          "example": "It's a fox.",
+          "exampleZh": "是只狐狸。"
+        },
+        {
+          "word": "panda",
+          "zh": "大熊猫",
+          "icon": "🐼",
+          "example": "It's a panda.",
+          "exampleZh": "是只大熊猫。"
+        },
+        {
+          "word": "red panda",
+          "zh": "小熊猫",
+          "icon": "🐻",
+          "example": "It's a red panda.",
+          "exampleZh": "是只小熊猫。"
+        },
+        {
+          "word": "cute",
+          "zh": "可爱的",
+          "icon": "😊",
+          "example": "It's cute.",
+          "exampleZh": "它很可爱。"
+        },
+        {
+          "word": "monkey",
+          "zh": "猴子",
+          "icon": "🐒",
+          "example": "It's a monkey.",
+          "exampleZh": "是只猴子。"
+        },
+        {
+          "word": "tiger",
+          "zh": "老虎",
+          "icon": "🐯",
+          "example": "It's a tiger.",
+          "exampleZh": "是只老虎。"
+        },
+        {
+          "word": "elephant",
+          "zh": "大象",
+          "icon": "🐘",
+          "example": "It's an elephant.",
+          "exampleZh": "是头大象。"
+        },
+        {
+          "word": "lion",
+          "zh": "狮子",
+          "icon": "🦁",
+          "example": "It's a lion.",
+          "exampleZh": "是只狮子。"
+        },
+        {
+          "word": "animal",
+          "zh": "动物",
+          "icon": "🦓",
+          "example": "I know many animals.",
+          "exampleZh": "我知道很多动物。"
+        },
+        {
+          "word": "giraffe",
+          "zh": "长颈鹿",
+          "icon": "🦒",
+          "example": "The giraffe is tall.",
+          "exampleZh": "长颈鹿很高。"
+        },
+        {
+          "word": "tall",
+          "zh": "高的",
+          "icon": "📏",
+          "example": "The giraffe is tall.",
+          "exampleZh": "长颈鹿很高。"
+        },
+        {
+          "word": "fast",
+          "zh": "快的",
+          "icon": "⚡",
+          "example": "The lion is fast.",
+          "exampleZh": "狮子很快。"
+        }
+      ],
+      "coreSentences": [
+        {
+          "en": "Let's go to the zoo!",
+          "zh": "我们一起去动物园吧！",
+          "blocks": [
+            "Let's",
+            "go",
+            "to",
+            "the",
+            "zoo",
+            "!"
+          ]
+        },
+        {
+          "en": "What's this?",
+          "zh": "这是什么？",
+          "blocks": [
+            "What's",
+            "this",
+            "?"
+          ]
+        },
+        {
+          "en": "It's a fox.",
+          "zh": "是只狐狸。",
+          "blocks": [
+            "It's",
+            "a",
+            "fox",
+            "."
+          ]
+        },
+        {
+          "en": "What's that?",
+          "zh": "那是什么？",
+          "blocks": [
+            "What's",
+            "that",
+            "?"
+          ]
+        },
+        {
+          "en": "It's a red panda.",
+          "zh": "是只小熊猫。",
+          "blocks": [
+            "It's",
+            "a",
+            "red",
+            "panda",
+            "."
+          ]
+        },
+        {
+          "en": "It's cute!",
+          "zh": "好可爱！",
+          "blocks": [
+            "It's",
+            "cute",
+            "!"
+          ]
+        },
+        {
+          "en": "The giraffe is tall!",
+          "zh": "长颈鹿很高！",
+          "blocks": [
+            "The",
+            "giraffe",
+            "is",
+            "tall",
+            "!"
+          ]
+        }
+      ],
+      "startToRead": {
+        "title": "Amazing animals",
+        "titleZh": "令人惊奇的动物",
+        "passage": [
+          "The giraffe is tall!",
+          "The lion is fast!",
+          "The elephant is big!",
+          "The fish is small!",
+          "I like fish!"
+        ]
+      },
+      "readingTime": {
+        "title": "Amazing whales",
+        "titleZh": "令人惊奇的鲸鱼",
+        "paragraphs": [
+          "Fish are amazing. Are we amazing, Mum? Yes. We're big.",
+          "But whale sharks are big too.",
+          "We're fast. But squids are fast too.",
+          "We can jump. But sea lions can jump too.",
+          "Aha! I know! We sing! That's it! Our songs are special. That is amazing!"
+        ]
+      }
+    },
+    "C": {
+      "id": "C",
+      "label": "Part C · 单元实践任务",
+      "intro": "Make an animal picture book 制作一本动物图画书",
+      "project": {
+        "title": "制作一本动物图画书",
+        "titleEn": "Make an animal picture book",
+        "steps": [
+          {
+            "icon": "✂️",
+            "label": "准备一些动物图片、彩笔、白卡纸和剪刀。"
+          },
+          {
+            "icon": "📷",
+            "label": "把动物图片按“宠物”和“野生动物”分成两组。"
+          },
+          {
+            "icon": "📒",
+            "label": "把图片贴在笔记本上，写上动物的英文名称，制作成一本 Animal Book。"
+          },
+          {
+            "icon": "🗣️",
+            "label": "在课堂上用英语介绍：This is a monkey. It's cute."
+          }
+        ],
+        "meaning": "复习巩固有关动物的词汇和句子，理解不同种类的动物都有其特别之处，在综合实践活动中运用语言。",
+        "extension": "拓展学习鲸妈妈与鲸宝宝讨论四种海洋动物奇特之处的对话，进一步理解动物各有不同，都有奇妙之处，尝试就不同动物的特别之处提出更多的想法和问题。"
+      }
+    }
+  },
+  "mustKnow": {
+    "vocab": [
+      "dog",
+      "cat",
+      "fish",
+      "bird",
+      "rabbit",
+      "pet",
+      "like",
+      "zoo",
+      "fox",
+      "panda",
+      "monkey",
+      "tiger",
+      "elephant",
+      "lion",
+      "animal",
+      "giraffe"
+    ],
+    "vocabCount": 16,
+    "sentences": [
+      "I like your dog.",
+      "Do you have a pet?",
+      "Yes, I do. I have a cat.",
+      "No, I don't.",
+      "Let's go to the zoo!",
+      "What's this?",
+      "It's a fox.",
+      "The giraffe is tall!"
+    ],
+    "sentenceCount": 8,
+    "phonics": [
+      "Ii /aɪ/",
+      "Jj /dʒeɪ/",
+      "Kk /keɪ/",
+      "Ll /el/"
+    ],
+    "phonicsCount": 4,
+    "test": [
+      {
+        "id": "g3u3-mk-q1",
+        "type": "listen-pick",
+        "prompt": "听单词，选出对应的中文意思。",
+        "audio": "elephant",
+        "options": [
+          "大象",
+          "老虎",
+          "狮子",
+          "猴子"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "g3u3-mk-q2",
+        "type": "multiple-choice",
+        "prompt": "'It's a red panda.' 的中文意思是？",
+        "options": [
+          "是只大熊猫。",
+          "是只小熊猫。",
+          "是只狐狸。",
+          "是只猴子。"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "g3u3-mk-q3",
+        "type": "multiple-choice",
+        "prompt": "—____ —It's a tiger.",
+        "options": [
+          "What's this?",
+          "Do you have a pet?",
+          "Is that your brother?",
+          "What's that?"
+        ],
+        "answer": 3
+      },
+      {
+        "id": "g3u3-mk-q4",
+        "type": "matcher",
+        "prompt": "把单词和对应的意思连起来：",
+        "pairs": [
+          {
+            "word": "dog",
+            "icon": "🐶",
+            "zh": "狗"
+          },
+          {
+            "word": "cat",
+            "icon": "🐱",
+            "zh": "猫"
+          },
+          {
+            "word": "bird",
+            "icon": "🐦",
+            "zh": "鸟"
+          },
+          {
+            "word": "rabbit",
+            "icon": "🐰",
+            "zh": "兔"
+          }
+        ]
+      },
+      {
+        "id": "g3u3-mk-q5",
+        "type": "multiple-choice",
+        "prompt": "'The lion is ____!'（狮子很快。）",
+        "options": [
+          "big",
+          "small",
+          "tall",
+          "fast"
+        ],
+        "answer": 3
+      }
+    ]
+  },
+  "review": []
+}

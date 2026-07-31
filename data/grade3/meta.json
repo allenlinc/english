@@ -23,7 +23,7 @@
       "partA": "How do we greet friends?",
       "partB": "How can we be a good friend?",
       "partC": "Make a mind map of making friends",
-      "url": "grade3/unit1.html"
+      "url": "grade3/unit.html?unit=u1"
     },
     {
       "id": "u2",
@@ -35,8 +35,7 @@
       "partA": "Who lives with you?",
       "partB": "How are families different?",
       "partC": "Make a family tree",
-      "url": "#",
-      "coming": true
+      "url": "grade3/unit.html?unit=u2"
     },
     {
       "id": "u3",
@@ -48,8 +47,7 @@
       "partA": "What pets do you know?",
       "partB": "What wild animals do you know?",
       "partC": "Make an animal picture book",
-      "url": "#",
-      "coming": true
+      "url": "grade3/unit.html?unit=u3"
     },
     {
       "id": "u4",
@@ -61,8 +59,7 @@
       "partA": "What do we get from plants?",
       "partB": "How can we help plants?",
       "partC": "Make a paper garden",
-      "url": "#",
-      "coming": true
+      "url": "grade3/unit.html?unit=u4"
     },
     {
       "id": "u5",
@@ -74,8 +71,7 @@
       "partA": "What colours do you see?",
       "partB": "How do colours help us?",
       "partC": "Make a colour flip book",
-      "url": "#",
-      "coming": true
+      "url": "grade3/unit.html?unit=u5"
     },
     {
       "id": "u6",
@@ -87,8 +83,7 @@
       "partA": "When do we use numbers?",
       "partB": "How useful are numbers?",
       "partC": "Make a birthday card",
-      "url": "#",
-      "coming": true
+      "url": "grade3/unit.html?unit=u6"
     }
   ],
   "revision": {
@@ -97,8 +92,7 @@
     "titleZh": "做一个好客人",
     "color": "#2D3142",
     "icon": "🏠",
-    "url": "#",
-    "coming": true
+    "url": "grade3/unit.html?unit=rev"
   },
   "features": {
     "vocabCount": 18,

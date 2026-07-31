@@ -1,0 +1,179 @@
+{
+  "id": "g3u4",
+  "number": 4,
+  "titleEn": "Plants around us",
+  "titleZh": "我们身边的植物",
+  "theme": "常见的植物、身边的自然现象与生态环境",
+  "totalSections": 11,
+  "objectives": [
+    { "text": "能够谈论对水果和农场的喜好，并能就建设绿色校园提出建议。", "icon": "💬" },
+    { "text": "能够说出水果、植物以及植物生长条件等单词，并描述植物如何生长。", "icon": "🌱" },
+    { "text": "能够利用图片信息阅读短文，找出与植物和水果相关的关键信息。", "icon": "📖" },
+    { "text": "能够正确读写字母 Mm—Nn—Oo—Pp，辨别它们在单词中的发音。", "icon": "🔤" }
+  ],
+  "parts": {
+    "A": {
+      "id": "A",
+      "label": "Part A · 我们从植物身上获得什么",
+      "intro": "What do we get from plants? 我们从植物身上获得什么？",
+      "dialogue": {
+        "lines": [
+          { "speaker": "Mike", "en": "Mike, do you like apples?", "zh": "迈克，你喜欢苹果吗？" },
+          { "speaker": "Wu Binbin", "en": "Yes, I do. And you?", "zh": "是的，我喜欢。你呢？" },
+          { "speaker": "Mike", "en": "No, I don't. I like bananas.", "zh": "不，我不喜欢。我喜欢香蕉。" },
+          { "speaker": "Miss White", "en": "Do you like the farm?", "zh": "你们喜欢农场吗？" },
+          { "speaker": "Wu Binbin", "en": "Yes, Miss White.", "zh": "是的，怀特老师。" },
+          { "speaker": "Mike", "en": "I like fresh air.", "zh": "我喜欢新鲜的空气。" }
+        ]
+      },
+      "vocab": [
+        { "word": "apple", "zh": "苹果", "icon": "🍎", "example": "I like apples.", "exampleZh": "我喜欢苹果。" },
+        { "word": "banana", "zh": "香蕉", "icon": "🍌", "example": "I like bananas.", "exampleZh": "我喜欢香蕉。" },
+        { "word": "orange", "zh": "橙子；柑橘", "icon": "🍊", "example": "I have an orange.", "exampleZh": "我有一个橘子。" },
+        { "word": "grape", "zh": "葡萄", "icon": "🍇", "example": "I see grapes.", "exampleZh": "我看见葡萄。" },
+        { "word": "farm", "zh": "农场", "icon": "🚜", "example": "Let's go to the farm!", "exampleZh": "我们一起去农场吧！" },
+        { "word": "air", "zh": "空气", "icon": "💨", "example": "I need fresh air.", "exampleZh": "我需要新鲜的空气。" }
+      ],
+      "phonics": [
+        { "letter": "Mm", "sound": "/m/", "example": "moon", "exampleZh": "月亮", "memory": "Mm 像两扇紧闭的门，/m/ 像闭着嘴轻轻哼歌的声音" },
+        { "letter": "Nn", "sound": "/n/", "example": "nose", "exampleZh": "鼻子", "memory": "Nn 像一道闪电，/n/ 像鼻子哼气时发出的声音" },
+        { "letter": "Oo", "sound": "/ɒ/", "example": "orange", "exampleZh": "橙子", "memory": "Oo 像一个鸡蛋，/ɒ/ 像惊讶地张大嘴巴发出的声音" },
+        { "letter": "Pp", "sound": "/p/", "example": "pen", "exampleZh": "钢笔", "memory": "Pp 像一面小旗，/p/ 像气球突然放气的轻响" }
+      ],
+      "coreSentences": [
+        { "en": "Mike, do you like apples?", "zh": "迈克，你喜欢苹果吗？", "blocks": ["Mike", ",", "do", "you", "like", "apples", "?"] },
+        { "en": "Yes, I do. And you?", "zh": "是的，我喜欢。你呢？", "blocks": ["Yes", ",", "I", "do", ".", "And", "you", "?"] },
+        { "en": "No, I don't. I like bananas.", "zh": "不，我不喜欢。我喜欢香蕉。", "blocks": ["No", ",", "I", "don't", ".", "I", "like", "bananas", "."] },
+        { "en": "Do you like the farm?", "zh": "你们喜欢农场吗？", "blocks": ["Do", "you", "like", "the", "farm", "?"] },
+        { "en": "I like fresh air.", "zh": "我喜欢新鲜的空气。", "blocks": ["I", "like", "fresh", "air", "."] },
+        { "en": "I see an apple.", "zh": "我看见一个苹果。", "blocks": ["I", "see", "an", "apple", "."] }
+      ]
+    },
+    "B": {
+      "id": "B",
+      "label": "Part B · 我们可以怎样帮助植物",
+      "intro": "How can we help plants? 我们可以怎样帮助植物？",
+      "dialogue": {
+        "lines": [
+          { "speaker": "Chen Jie", "en": "The school gardens need help.", "zh": "学校花园需要帮助。" },
+          { "speaker": "Mike", "en": "We can water the flowers.", "zh": "我们可以给花浇水。" },
+          { "speaker": "Wu Binbin", "en": "We can water the grass.", "zh": "我们可以给草地浇水。" },
+          { "speaker": "Mike", "en": "Nice. And?", "zh": "很好。还有呢？" },
+          { "speaker": "Chen Jie", "en": "We can plant new trees.", "zh": "我们可以新种些树。" }
+        ]
+      },
+      "vocab": [
+        { "word": "school", "zh": "学校", "icon": "🏫", "example": "Let's go to school.", "exampleZh": "我们去上学吧。" },
+        { "word": "garden", "zh": "花园", "icon": "🌷", "example": "I have a small garden.", "exampleZh": "我有一个小花园。" },
+        { "word": "need", "zh": "需要", "icon": "❗", "example": "Flowers need water.", "exampleZh": "花需要水。" },
+        { "word": "water", "zh": "浇水；水", "icon": "💧", "example": "Please water the trees.", "exampleZh": "请给树浇水。" },
+        { "word": "flower", "zh": "花；花朵", "icon": "🌸", "example": "Bees need flowers.", "exampleZh": "蜜蜂需要花。" },
+        { "word": "grass", "zh": "草；草地", "icon": "🌱", "example": "Let's play on the grass.", "exampleZh": "我们在草地上玩吧。" },
+        { "word": "plant", "zh": "种植；植物", "icon": "🌿", "example": "We plant a tree.", "exampleZh": "我们种了一棵树。" },
+        { "word": "new", "zh": "新的", "icon": "✨", "example": "I have a new pen.", "exampleZh": "我有一支新钢笔。" },
+        { "word": "tree", "zh": "树", "icon": "🌳", "example": "This tree is tall.", "exampleZh": "这棵树很高。" },
+        { "word": "sun", "zh": "阳光；太阳", "icon": "☀️", "example": "Let's play in the sun!", "exampleZh": "我们在阳光下玩吧！" },
+        { "word": "give", "zh": "给", "icon": "🎁", "example": "Please give me a book.", "exampleZh": "请给我一本书。" },
+        { "word": "us", "zh": "我们", "icon": "👫", "example": "Look at us! We play together.", "exampleZh": "看我们！我们一起玩。" },
+        { "word": "them", "zh": "它们；他们；她们", "icon": "👥", "example": "I like them.", "exampleZh": "我喜欢它们。" }
+      ],
+      "coreSentences": [
+        { "en": "The school gardens need help.", "zh": "学校花园需要帮助。", "blocks": ["The", "school", "gardens", "need", "help", "."] },
+        { "en": "We can water the flowers.", "zh": "我们可以给花浇水。", "blocks": ["We", "can", "water", "the", "flowers", "."] },
+        { "en": "We can plant new trees.", "zh": "我们可以新种些树。", "blocks": ["We", "can", "plant", "new", "trees", "."] },
+        { "en": "They help plants grow.", "zh": "它们帮助植物生长。", "blocks": ["They", "help", "plants", "grow", "."] },
+        { "en": "Plants can give us many things.", "zh": "植物可以给予我们很多东西。", "blocks": ["Plants", "can", "give", "us", "many", "things", "."] },
+        { "en": "Plants need air, water and sun.", "zh": "植物需要空气、水和阳光。", "blocks": ["Plants", "need", "air", ",", "water", "and", "sun", "."] }
+      ],
+      "startToRead": {
+        "title": "Plants around us",
+        "titleZh": "我们身边的植物",
+        "passage": [
+          "Plants need air, water and sun. They help plants grow.",
+          "Plants can give us many things. We need plants, and we can help them too.",
+          "Apple trees need air, water and sun. We can help them.",
+          "They can give us apples. Apple trees give us apples!"
+        ]
+      },
+      "readingTime": {
+        "title": "The little apple tree",
+        "titleZh": "小苹果树",
+        "paragraphs": [
+          "I am an apple tree. My new family help me.",
+          "I need air, water and sun. My family water me.",
+          "It is cold. They help me. They keep me warm.",
+          "My family like me. The flowers are so beautiful! I love fresh air.",
+          "I am big now. I give apples to my family. We are all happy!"
+        ]
+      }
+    },
+    "C": {
+      "id": "C",
+      "label": "Part C · 单元实践任务",
+      "intro": "Make a paper garden 制作一个纸艺花园",
+      "project": {
+        "title": "制作一个纸艺花园",
+        "titleEn": "Make a paper garden",
+        "steps": [
+          { "icon": "✂️", "label": "用彩色卡纸剪出 sun、water、tree 等小卡片，准备好做花园的材料。" },
+          { "icon": "🌳", "label": "把卡片和画好的植物贴到纸板底座上，做成一个立体的纸艺花园。" },
+          { "icon": "🗣️", "label": "和同伴讨论果树的需求和回报，想一想其他植物需要什么帮助。" },
+          { "icon": "📤", "label": "在课堂上用 \"This is my garden. ...\" 介绍你的纸艺花园。" }
+        ],
+        "meaning": "能综合运用本单元语言介绍植物的需求和益处，理解植物与人类互利共生的关系，形成关爱植物的意识。",
+        "extension": "和家人一起动手做一做纸艺花园，并向他们介绍植物需要什么帮助、又能给我们什么。"
+      }
+    }
+  },
+  "mustKnow": {
+    "vocab": ["apple", "banana", "orange", "grape", "farm", "air", "school", "garden", "need", "water", "flower", "grass", "plant", "new", "tree", "sun", "give", "us", "them"],
+    "vocabCount": 19,
+    "sentences": ["Mike, do you like apples?", "Yes, I do. And you?", "No, I don't. I like bananas.", "I like fresh air.", "The school gardens need help.", "We can water the flowers.", "Plants can give us many things.", "Plants need air, water and sun."],
+    "sentenceCount": 8,
+    "phonics": ["Mm /m/", "Nn /n/", "Oo /ɒ/", "Pp /p/"],
+    "phonicsCount": 4,
+    "test": [
+      {
+        "id": "g3u4-mk-q1",
+        "type": "listen-pick",
+        "prompt": "听单词，选出对应的中文意思。",
+        "audio": "apple",
+        "options": ["葡萄", "苹果", "香蕉", "橘子"],
+        "answer": 1
+      },
+      {
+        "id": "g3u4-mk-q2",
+        "type": "multiple-choice",
+        "prompt": "\"I like fresh ___\" 空格处填哪个单词最合适？",
+        "options": ["water", "air", "sun", "plant"],
+        "answer": 1
+      },
+      {
+        "id": "g3u4-mk-q3",
+        "type": "multiple-choice",
+        "prompt": "\"The school gardens ___ help.\" 空格处应填什么？",
+        "options": ["need", "plant", "give", "water"],
+        "answer": 0
+      },
+      {
+        "id": "g3u4-mk-q4",
+        "type": "multiple-choice",
+        "prompt": "字母 Pp 在单词中的发音是？",
+        "options": ["/ɒ/", "/n/", "/m/", "/p/"],
+        "answer": 3
+      },
+      {
+        "id": "g3u4-mk-q5",
+        "type": "matcher",
+        "prompt": "把单词和对应的中文意思连起来：",
+        "pairs": [
+          { "word": "apple", "icon": "🍎", "zh": "苹果" },
+          { "word": "banana", "icon": "🍌", "zh": "香蕉" },
+          { "word": "flower", "icon": "🌸", "zh": "花" },
+          { "word": "tree", "icon": "🌳", "zh": "树" }
+        ]
+      }
+    ]
+  },
+  "review": []
+}

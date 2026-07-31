@@ -1,0 +1,146 @@
+{
+  "id": "g3rev",
+  "number": "Rev",
+  "titleEn": "Being a good guest",
+  "titleZh": "做一个好客人",
+  "theme": "期末复习与综合表达",
+  "totalSections": 6,
+  "objectives": [
+    { "text": "能够礼貌地问候他人、介绍朋友，并在做客时表现出得体的言行举止。", "icon": "🎯" },
+    { "text": "能够综合运用本学期所学的词汇和句型，包括身体部位、数字、颜色、动物等主题。", "icon": "🗣️" },
+    { "text": "能够听懂并参与关于做客礼仪的对话，理解并运用礼貌用语。", "icon": "👂" },
+    { "text": "能够借助图片提示，理解并朗读综合复习中的故事和对话。", "icon": "📖" }
+  ],
+  "parts": {
+    "A": {
+      "id": "A",
+      "label": "期末复习",
+      "intro": "Review what we have learned and be a good guest.",
+      "vocab": [
+        { "word": "name", "zh": "名字", "icon": "🪪" },
+        { "word": "ear", "zh": "耳朵", "icon": "👂" },
+        { "word": "mouth", "zh": "嘴", "icon": "👄" },
+        { "word": "eye", "zh": "眼睛", "icon": "👁️" },
+        { "word": "hand", "zh": "手", "icon": "✋" },
+        { "word": "arm", "zh": "胳膊", "icon": "💪" },
+        { "word": "nice", "zh": "令人愉快的；友好的", "icon": "😊" },
+        { "word": "old", "zh": "(多少)岁；年纪；旧的", "icon": "👴" },
+        { "word": "one", "zh": "一", "icon": "1️⃣" },
+        { "word": "two", "zh": "二", "icon": "2️⃣" },
+        { "word": "three", "zh": "三", "icon": "3️⃣" },
+        { "word": "four", "zh": "四", "icon": "4️⃣" },
+        { "word": "five", "zh": "五", "icon": "5️⃣" },
+        { "word": "six", "zh": "六", "icon": "6️⃣" },
+        { "word": "seven", "zh": "七", "icon": "7️⃣" },
+        { "word": "eight", "zh": "八", "icon": "8️⃣" },
+        { "word": "nine", "zh": "九", "icon": "9️⃣" },
+        { "word": "ten", "zh": "十", "icon": "🔟" }
+      ],
+      "expressions": [
+        { "en": "Hello! I'm Mike Black.", "zh": "你好！我是迈克·布莱克。" },
+        { "en": "Nice to meet you.", "zh": "见到你很高兴。" },
+        { "en": "Nice to meet you too.", "zh": "见到你（我）也很高兴。" },
+        { "en": "How old are you?", "zh": "你几岁了？" },
+        { "en": "I'm five years old.", "zh": "我五岁了。" },
+        { "en": "Me too.", "zh": "我也是。" },
+        { "en": "How many apples?", "zh": "几个苹果？" },
+        { "en": "Great! Let's go to the shop!", "zh": "好极了！我们一起去商店吧！" },
+        { "en": "That's ten yuan, please.", "zh": "(共)十元，谢谢。" },
+        { "en": "Here you are.", "zh": "给您。" },
+        { "en": "It's seven o'clock.", "zh": "七点了。" },
+        { "en": "Happy birthday!", "zh": "生日快乐！" },
+        { "en": "This is for you.", "zh": "这是给你的。" },
+        { "en": "Thank you.", "zh": "谢谢你。" }
+      ],
+      "song": {
+        "title": "Being a good guest",
+        "titleZh": "做一个好客人",
+        "lyrics": [
+          "Say \"Hello!\" or say \"Hi!\"",
+          "Wave your hands and look in the eyes.",
+          "Be a good guest. Be polite!",
+          "We are nice. We play fair.",
+          "Share your toys and listen with care.",
+          "Be a good guest. Show we care!"
+        ]
+      },
+      "readingTime": {
+        "title": "A visit to Chen Jie's home",
+        "titleZh": "去陈杰家做客",
+        "paragraphs": [
+          "Mum! Dad! This is Wu Binbin. And this is Mike Black.",
+          "Hi, Binbin! Hello, Mike! Nice to meet you.",
+          "Nice to meet you too.",
+          "This is for you.",
+          "Thank you."
+        ]
+      }
+    }
+  },
+  "mustKnow": {
+    "vocab": ["name", "ear", "mouth", "eye", "hand", "arm", "nice", "old", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"],
+    "vocabCount": 18,
+    "sentences": ["Hello! I'm …", "Nice to meet you.", "How old are you?", "I'm … years old.", "How many…?", "Here you are.", "Thank you.", "Happy birthday!"],
+    "sentenceCount": 8,
+    "phonics": ["Aa /eɪ/", "Bb /biː/", "Cc /siː/", "Dd /diː/", "Ee /iː/", "Ff /ef/", "Gg /dʒiː/", "Hh /eɪtʃ/", "Ii /aɪ/", "Jj /dʒeɪ/", "Kk /keɪ/", "Ll /el/", "Mm /em/", "Nn /en/", "Oo /əʊ/", "Pp /piː/", "Qq /kjuː/", "Rr /ɑː(r)/", "Ss /es/", "Tt /tiː/", "Uu /juː/", "Vv /viː/", "Ww /ˈdʌbljuː/", "Xx /eks/", "Yy /waɪ/", "Zz /ziː/"],
+    "phonicsCount": 26,
+    "test": [
+      {
+        "id": "g3rev-mk-q1",
+        "type": "listen-pick",
+        "prompt": "听单词，选出对应的中文意思。",
+        "audio": "hand",
+        "options": ["胳膊", "手", "眼睛", "耳朵"],
+        "answer": 1
+      },
+      {
+        "id": "g3rev-mk-q2",
+        "type": "multiple-choice",
+        "prompt": "去做客时，进门后应该说？",
+      "options": [
+        "Goodbye!",
+        "How old are you?",
+        "Hello! Nice to meet you.",
+        "I am five years old this year."
+      ],
+      "answer": 2
+      },
+      {
+        "id": "g3rev-mk-q3",
+        "type": "multiple-choice",
+        "prompt": "\"This is for you.\" 的中文意思是？",
+        "options": [
+          "这是我的。",
+          "这是给你的。",
+          "这是谁？",
+          "这很好。"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "g3rev-mk-q4",
+        "type": "multiple-choice",
+        "prompt": "收到礼物时应该说什么？",
+        "options": [
+          "How are you?",
+          "Nice to meet you.",
+          "I'm fine.",
+          "Thank you."
+        ],
+        "answer": 3
+      },
+      {
+        "id": "g3rev-mk-q5",
+        "type": "matcher",
+        "prompt": "把身体部位单词和对应的意思连起来：",
+        "pairs": [
+          { "word": "eye", "icon": "👁️", "zh": "眼睛" },
+          { "word": "ear", "icon": "👂", "zh": "耳朵" },
+          { "word": "mouth", "icon": "👄", "zh": "嘴" },
+          { "word": "arm", "icon": "💪", "zh": "胳膊" }
+        ]
+      }
+    ]
+  },
+  "review": []
+}
