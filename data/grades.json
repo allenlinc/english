@@ -7,9 +7,12 @@
       "labelEn": "Grade 3",
       "icon": "📗",
       "active": true,
-      "url": "grade3.html",
-      "desc": "人教版 RP · 2025 秋",
-      "color": "#6DBE45"
+      "desc": "人教版 RP",
+      "color": "#6DBE45",
+      "semesters": [
+        { "id": "up", "label": "上册", "active": true, "url": "grade3.html", "desc": "2025 秋 · 6 单元 + 复习" },
+        { "id": "down", "label": "下册", "active": false, "url": "", "desc": "敬请期待" }
+      ]
     },
     {
       "id": "g4",
@@ -18,9 +21,12 @@
       "labelEn": "Grade 4",
       "icon": "📘",
       "active": false,
-      "url": "grade4.html",
-      "desc": "敬请期待",
-      "color": "#3DA5E0"
+      "desc": "人教版 RP",
+      "color": "#3DA5E0",
+      "semesters": [
+        { "id": "up", "label": "上册", "active": false, "url": "", "desc": "敬请期待" },
+        { "id": "down", "label": "下册", "active": false, "url": "", "desc": "敬请期待" }
+      ]
     },
     {
       "id": "g5",
@@ -29,9 +35,12 @@
       "labelEn": "Grade 5",
       "icon": "📙",
       "active": false,
-      "url": "grade5.html",
-      "desc": "敬请期待",
-      "color": "#FF8C2B"
+      "desc": "人教版 RP",
+      "color": "#FF8C2B",
+      "semesters": [
+        { "id": "up", "label": "上册", "active": false, "url": "", "desc": "敬请期待" },
+        { "id": "down", "label": "下册", "active": false, "url": "", "desc": "敬请期待" }
+      ]
     },
     {
       "id": "g6",
@@ -40,9 +49,12 @@
       "labelEn": "Grade 6",
       "icon": "📕",
       "active": false,
-      "url": "grade6.html",
-      "desc": "敬请期待",
-      "color": "#B07ACC"
+      "desc": "人教版 RP",
+      "color": "#B07ACC",
+      "semesters": [
+        { "id": "up", "label": "上册", "active": false, "url": "", "desc": "敬请期待" },
+        { "id": "down", "label": "下册", "active": false, "url": "", "desc": "敬请期待" }
+      ]
     }
   ]
 }

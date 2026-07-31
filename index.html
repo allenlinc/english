@@ -101,6 +101,13 @@
     const unitIds = ['u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'rev'];
     const gp = Progress.getGradeProgress(3, unitIds, totalSectionsMap);
 
+    function semButtons(g) {
+      return (g.semesters || []).map(s => s.active
+        ? `<a href="${s.url}" class="sem-btn sem-btn--active" title="${s.desc}">📖 ${s.label}</a>`
+        : `<button class="sem-btn" disabled title="${s.desc}">${s.label}</button>`
+      ).join('');
+    }
+
     for (const g of grades) {
       const card = document.createElement('div');
       const active = g.active;
@@ -116,11 +123,11 @@
           <div class="grade-card__icon">${g.icon}</div>
           <div class="grade-card__title">${g.label}</div>
           <div class="grade-card__sub">${g.desc}</div>
+          <div class="sem-row">${semButtons(g)}</div>
           <div class="progress-bar" style="margin-top:.75rem">
             <div class="progress-bar__fill" style="width:${pct}%"></div>
           </div>
           <div style="font-size:.8rem;color:var(--c-gray);margin-top:.35rem">整体进度 ${pct}%</div>
-          <a href="${g.url}" class="btn btn-primary" style="margin-top:.75rem">进入学习</a>
         `;
       } else {
         card.className = 'grade-card grade-card--coming';
@@ -128,7 +135,7 @@
           <div class="grade-card__icon">${g.icon}</div>
           <div class="grade-card__title">${g.label}</div>
           <div class="grade-card__sub">${g.desc}</div>
-          <button class="btn btn-outline" style="margin-top:.75rem" disabled>敬请期待</button>
+          <div class="sem-row">${semButtons(g)}</div>
         `;
       }
       grid.appendChild(card);
