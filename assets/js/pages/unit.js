@@ -113,8 +113,8 @@ function addSection(parent, title, builder) {
   const section = el('section', { className: 'content-section' });
   section.appendChild(el('div', { className: 'content-section__title' }, title));
   const inner = el('div', {});
-  builder(inner);
   section.appendChild(inner);
+  builder(inner);
   parent.appendChild(section);
   return inner;
 }
