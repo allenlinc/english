@@ -23,9 +23,7 @@ export async function initUnit1() {
 
   // Validate quiz data
   const mkResult = validateQuizBank(data.mustKnow.test);
-  const rvResult = validateQuizBank(data.review);
   if (!mkResult.ok) console.warn('Must-know quiz validation:', mkResult.errors);
-  if (!rvResult.ok) console.warn('Review quiz validation:', rvResult.errors);
 
   // Render objectives
   renderObjectives(data);
@@ -40,9 +38,6 @@ export async function initUnit1() {
 
   // Render must-know section
   renderMustKnow(data.mustKnow);
-
-  // Render unit review
-  renderUnitReview(data.review);
 
   // TTS init on first user click
   document.addEventListener('click', () => TTS.init(), { once: true });
@@ -344,40 +339,6 @@ function openMiniTest(testQuestions) {
       renderListenPick(questionsContainer, q, onResult);
     } else if (q.type === 'matcher') {
       renderMatcher(questionsContainer, q, onResult);
-    }
-  }
-}
-
-// --- Unit Review ---
-function renderUnitReview(questions) {
-  const container = document.getElementById('review-list');
-  container.innerHTML = '';
-
-  let score = 0;
-  let answered = 0;
-  const scoreDisplay = document.getElementById('review-score');
-
-  function onResult(correct) {
-    answered++;
-    if (correct) score++;
-    scoreDisplay.textContent = `已答 ${answered}/${questions.length}  ·  正确 ${score}`;
-
-    if (answered === questions.length) {
-      const pct = Math.round((score / questions.length) * 100);
-      const grade = pct >= 80 ? '🏆 优秀！' : pct >= 60 ? '👍 不错！' : '💪 还需要多练习哦！';
-      scoreDisplay.textContent = `${grade} 得分 ${score}/${questions.length}（${pct}%）`;
-      Progress.setScore(GRADE, UNIT, score, questions.length);
-      Progress.markComplete(GRADE, UNIT, 'unitReview');
-    }
-  }
-
-  for (const q of questions) {
-    if (q.type === 'multiple-choice') {
-      renderMultipleChoice(container, q, onResult);
-    } else if (q.type === 'listen-pick') {
-      renderListenPick(container, q, onResult);
-    } else if (q.type === 'matcher') {
-      renderMatcher(container, q, onResult);
     }
   }
 }
