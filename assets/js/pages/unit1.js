@@ -17,6 +17,9 @@ import { renderMatcher } from '../components/quiz/matcher.js';
 const GRADE = 3;
 const UNIT = 1;
 
+// Cross-section navigation: switch active part tab (must-know -> Part B)
+let activatePart = () => {};
+
 export async function initUnit1() {
   const res = await fetch('../data/grade3/unit1.json');
   const data = await res.json();
@@ -55,20 +58,17 @@ function setupTabs() {
   const tabs = document.querySelectorAll('.tab-btn');
   const panels = document.querySelectorAll('.part-panel');
 
+  activatePart = (part) => {
+    tabs.forEach(t => t.classList.toggle('active', t.dataset.part === part));
+    panels.forEach(p => p.classList.toggle('active', p.dataset.part === part));
+  };
+
   tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const part = tab.dataset.part;
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      panels.forEach(p => {
-        p.classList.toggle('active', p.dataset.part === part);
-      });
-    });
+    tab.addEventListener('click', () => activatePart(tab.dataset.part));
   });
 
   // Default: show Part A
-  tabs[0]?.classList.add('active');
-  panels[0]?.classList.add('active');
+  activatePart('A');
 }
 
 // --- Part A ---
@@ -236,7 +236,8 @@ function renderMustKnow(mk) {
   const vocabBtn = el('button', {
     className: 'btn btn-green btn-sm',
     onClick: () => {
-      // Scroll to Part B flashcards section
+      // 先切到 Part B 让闪卡区域可见，再滚动过去
+      activatePart('B');
       document.getElementById('pb-flashcards')?.scrollIntoView({ behavior: 'smooth' });
     }
   }, '去看闪卡');
